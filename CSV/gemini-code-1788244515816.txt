@@ -1,0 +1,31 @@
+Position,Name,Credits,Team,AvgPointsPerGame,Ownership
+BAT,Sadaf Shamas,7.5,PAK-W,30.0,25.0
+BAT,Gull Feroza,8.5,PAK-W,48.0,68.0
+BAT,Eyman Fatima,7.5,PAK-W,28.0,18.0
+BAT,Ayesha Zafar,7.5,PAK-W,32.0,22.0
+WK,Muneeba Ali,9.0,PAK-W,55.0,82.0
+AR,Fatima Sana,9.0,PAK-W,58.0,88.0
+BOWL,Nashra Sandhu,8.5,PAK-W,50.0,75.0
+BOWL,Sadia Iqbal,9.0,PAK-W,54.0,80.0
+BOWL,Tuba Hassan,8.0,PAK-W,42.0,52.0
+BOWL,Waheeda Akhtar,7.0,PAK-W,22.0,10.0
+BAT,Shawaal Zulfiqar,7.0,PAK-W,20.0,12.0
+BOWL,Saira Jabeen,7.0,PAK-W,20.0,8.0
+AR,Momina Riasat,7.0,PAK-W,24.0,10.0
+BOWL,Umm-e-Hani,7.5,PAK-W,35.0,28.0
+AR,Eman Naseer,7.0,PAK-W,22.0,7.0
+BAT,Nattakan Chantam,8.5,THAI-W,45.0,64.0
+AR,Phannita Maya,7.5,THAI-W,32.0,30.0
+WK,Nannapat Koncharoenkai,8.5,THAI-W,42.0,60.0
+BAT,Aphisara Suwanchonrathi,7.0,THAI-W,18.0,8.0
+AR,Chanida Sutthiruang,8.5,THAI-W,48.0,66.0
+AR,Naomi Hamilton,7.0,THAI-W,20.0,10.0
+BOWL,Nannaphat Chaihan,7.0,THAI-W,22.0,12.0
+BOWL,Suleeporn Laomi,8.0,THAI-W,40.0,45.0
+BOWL,Sunida Chaturongrattana,7.5,THAI-W,30.0,20.0
+BOWL,Onnicha Kamchomphu,8.5,THAI-W,46.0,62.0
+BOWL,Thipatcha Putthawong,9.0,THAI-W,56.0,84.0
+BOWL,Chayanisa Phengpaen,7.0,THAI-W,18.0,6.0
+AR,Koranit Suwanchonrathi,7.0,THAI-W,20.0,8.0
+BOWL,Thanrada Seesawan,7.0,THAI-W,18.0,5.0
+BAT,Naruemol Chaiwai,8.0,THAI-W,36.0,35.0

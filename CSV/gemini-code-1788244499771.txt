@@ -1,0 +1,30 @@
+Position,Name,Credits,Team,AvgPointsPerGame,Ownership
+BAT,Maia Bouchier,8.5,ENG-W,42.0,65.0
+BAT,Sophia Dunkley,8.5,ENG-W,45.0,70.0
+AR,Alice Capsey,9.0,ENG-W,54.0,82.0
+AR,Jodi Grewcock,7.0,ENG-W,25.0,12.0
+WK,Kira Chathli,7.5,ENG-W,30.0,25.0
+AR,Charis Pavely,7.5,ENG-W,35.0,20.0
+AR,Freya Kemp,8.0,ENG-W,40.0,45.0
+BOWL,Charlotte Dean,9.0,ENG-W,58.0,85.0
+AR,Danielle Gibson,8.0,ENG-W,38.0,35.0
+BOWL,Issy Wong,8.0,ENG-W,40.0,40.0
+BOWL,Lauren Filer,8.5,ENG-W,48.0,60.0
+BOWL,Tilly Corteen-Coleman,7.0,ENG-W,28.0,15.0
+BOWL,Ryana MacDonald-Gay,7.0,ENG-W,25.0,10.0
+BOWL,Grace Potts,7.0,ENG-W,22.0,8.0
+AR,Mady Villiers,7.5,ENG-W,32.0,18.0
+BAT,Gaby Lewis,9.0,IRE-W,52.0,78.0
+WK,Amy Hunter,8.5,IRE-W,46.0,68.0
+BAT,Rebecca Stokell,7.5,IRE-W,28.0,22.0
+BAT,Kia McCartney,7.0,IRE-W,20.0,10.0
+AR,Arlene Kelly,8.5,IRE-W,50.0,62.0
+AR,Leah Paul,8.0,IRE-W,36.0,38.0
+AR,Orla Prendergast,9.0,IRE-W,55.0,80.0
+AR,Alice Tector,7.0,IRE-W,22.0,12.0
+BAT,Louise Little,7.0,IRE-W,18.0,8.0
+BOWL,Georgina Dempsey,7.5,IRE-W,30.0,25.0
+BOWL,Cara Murray,7.5,IRE-W,32.0,28.0
+BOWL,Lara McBride,7.0,IRE-W,20.0,9.0
+WK,Christina Coulter Reilly,7.0,IRE-W,15.0,5.0
+BOWL,Jane Maguire,7.5,IRE-W,28.0,20.0

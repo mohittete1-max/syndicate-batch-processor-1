@@ -1,0 +1,12 @@
+name,role,team,cost,proj_points,id,is_captain,is_vice
+Sri Lanka Women Player 1,AR,Sri Lanka Women,9.0,55.6,0,False,False
+Sri Lanka Women Player 5,BAT,Sri Lanka Women,8.5,57.0,8,False,False
+Indonesia Women Player 5,BAT,Indonesia Women,8.5,57.0,9,False,False
+Sri Lanka Women Player 6,BAT,Sri Lanka Women,8.5,57.0,10,False,False
+Indonesia Women Player 6,BAT,Indonesia Women,8.5,57.0,11,False,False
+Sri Lanka Women Player 7,BAT,Sri Lanka Women,8.5,57.0,12,False,False
+Indonesia Women Player 7,BAT,Indonesia Women,8.5,57.0,13,False,False
+Indonesia Women Player 8,BOWL,Indonesia Women,8.0,50.0,15,False,False
+Indonesia Women Player 9,BOWL,Indonesia Women,8.0,50.0,17,False,False
+Sri Lanka Women Player 4,WK,Sri Lanka Women,9.0,60.5,6,True,False
+Indonesia Women Player 4,WK,Indonesia Women,9.0,60.5,7,False,True

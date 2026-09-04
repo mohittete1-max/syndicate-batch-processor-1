@@ -1,0 +1,105 @@
+====================================================================================
+                     CRICDATA GLOBAL MATCH CODES DIRECTORY
+====================================================================================
+DATE            | MATCH ID                               | MATCH NAME
+------------------------------------------------------------------------------------
+2026-09-09      | 4d504550-036d-42bd-9f49-4fd0c038be54   | England vs Pakistan, 3rd Test, Pakistan tour of England 2026
+2026-08-27      | cc1c57c0-7ecf-4556-8465-47bbac896427   | England vs Pakistan, 2nd Test, Pakistan tour of England 2026
+2026-08-19      | 89c3e654-61d9-46d4-8420-94059021cb20   | England vs Pakistan, 1st Test, Pakistan tour of England 2026
+2026-08-13      | 66f658bf-fbd0-49f5-8169-0d5806ceb2cf   | Professional County Club Select XI vs Pakistan, 3 -Day Warm-up match, Pakistan tour of England 2026
+2026-08-23      | d7ad6f40-5f17-4a8e-8552-044453e33b43   | Luxembourg Women vs Belgium Women, 4th T20I, Belgium Women tour of Luxembourg, 2026
+2026-08-23      | 67c75be2-2cbe-4d4a-9b42-a71277bceab6   | Luxembourg Women vs Belgium Women, 3rd T20I, Belgium Women tour of Luxembourg, 2026
+2026-08-22      | a6270d0c-7674-4272-a6f8-ff01a140fc03   | Luxembourg Women vs Belgium Women, 2nd T20I, Belgium Women tour of Luxembourg, 2026
+2026-08-22      | 30e4ed6b-c9a1-445f-8b67-1f0bb4d61707   | Luxembourg Women vs Belgium Women, 1st T20I, Belgium Women tour of Luxembourg, 2026
+2026-08-20      | 2f7b4b4d-222e-4a4b-93f8-5794ed89ad24   | China Women vs Oman Women, 1st T20I, China Women T20I Tri-Series, 2026
+2026-08-17      | ca1a54c7-6c4d-4a33-a11d-5d025494ce8e   | Papua New Guinea Women vs Thailand Women, 3rd ODI, Thailand Women tour of Papua New Guinea, 2026
+2026-08-01      | ac956620-023b-4430-8f78-1877951a44d7   | West Delhi Lions vs New Delhi Tigers, 3rd Match, Delhi Premier League 2026
+2026-08-01      | 29afe24f-1bca-40da-9161-9f1463a4a0b8   | South Delhi Superstarz vs East Delhi Riders, 2nd Match, Delhi Premier League 2026
+2026-07-31      | f0a96a04-5541-43d6-b8a8-fecd720eb207   | Central Delhi Kings vs Purani Dilli 6, 1st Match, Delhi Premier League 2026
+2026-07-30      | 32894cba-b94e-48c7-ba75-bdadd487d0d6   | Brazil Women vs Spain Women, Final, Womens T20I Quadrangular Series in Switzerland, 2026
+2026-07-30      | 68ab3133-143b-4ef8-aea9-b9cb86be18d1   | Spain Women vs Switzerland Women, 3rd place play-off, Womens T20I Quadrangular Series in Switzerland, 2026
+2026-07-29      | 42f49a0b-75ce-4092-89ac-7be50d5adec7   | Switzerland Women vs Brazil Women, 6th Match, Womens T20I Quadrangular Series in Switzerland, 2026
+2026-07-29      | 9259fa83-a58e-4151-ab30-68ca65348fa5   | Brazil Women vs Spain Women, 5th Match, Womens T20I Quadrangular Series in Switzerland, 2026
+2026-07-29      | 387a469a-d84f-4ec5-a296-eacfa64b7f5d   | Switzerland Women vs Jersey Women, Only T20I, Jersey Women tour of Switzerland, 2026
+2026-07-30      | d7a79f6e-87ed-41b8-be3f-bb3ac764167b   | Namibia Women vs Uganda Women, Final, Womens T20I Quadrangular Series in Namibia 2026
+2026-07-30      | 7f1af414-5983-43f2-b02f-c80ad2280362   | Hong Kong, China Women vs Tanzania Women, 3rd Place Play-off, Womens T20I Quadrangular Series in Namibia 2026
+2026-07-28      | 1fa3bd8a-4bac-4ebb-b022-aba8281467e3   | Tanzania Women vs Uganda Women, 12th Match, Womens T20I Quadrangular Series in Namibia 2026
+2026-07-28      | 2ede8246-e8e5-414b-98ac-72ae89232467   | Namibia Women vs Hong Kong, China Women, 11th Match, Womens T20I Quadrangular Series in Namibia 2026
+2026-07-27      | 278a67eb-76f6-4881-aa6b-f164cffb6a90   | Namibia Women vs Uganda Women, 10th Match, Womens T20I Quadrangular Series in Namibia 2026
+2026-07-27      | d8418e67-7eb7-4502-8977-52956fbd1358   | Hong Kong, China Women vs Tanzania Women, 9th Match, Womens T20I Quadrangular Series in Namibia 2026
+2026-07-25      | 685a5ac9-74f3-40af-99a7-7d06d05dba8a   | Hong Kong, China Women vs Uganda Women, 8th Match, Womens T20I Quadrangular Series in Namibia 2026
+2026-07-25      | 5a25c097-b127-4df0-925b-aab7743db3ae   | Namibia Women vs Tanzania Women, 7th Match, Womens T20I Quadrangular Series in Namibia 2026
+2026-07-24      | 6bf439a3-8c50-42fa-abc4-01c8d10717df   | Namibia Women vs Hong Kong, China Women, 6th Match, Womens T20I Quadrangular Series in Namibia 2026
+2026-07-24      | 2028c955-b007-44f5-a723-8750a1df4e73   | Tanzania Women vs Uganda Women, 5th Match, Womens T20I Quadrangular Series in Namibia 2026
+2026-07-22      | 2da9692b-0c25-4c4c-81fc-1a51565074f7   | Hong Kong, China Women vs Tanzania Women, 4th Match, Womens T20I Quadrangular Series in Namibia 2026
+2026-07-22      | edd78f2a-2188-48bd-9d02-9abc996f54d6   | Namibia Women vs Uganda Women, 3rd Match, Womens T20I Quadrangular Series in Namibia 2026
+2026-07-21      | 2b30e7ef-e6b4-4535-b09f-6c720d588816   | Namibia Women vs Tanzania Women, 2nd Match, Womens T20I Quadrangular Series in Namibia 2026
+2026-07-21      | d3917b90-5fe9-486c-b508-d1049fbda615   | Hong Kong, China Women vs Uganda Women, 1st Match, Womens T20I Quadrangular Series in Namibia 2026
+2026-07-15      | cad7f004-3f96-41f5-befd-056dc070044b   | Ireland Women vs West Indies Women, 3rd ODI, West Indies Women tour of Ireland, 2026
+2026-07-12      | 25504f95-6277-4e54-901d-421192877485   | Ireland Women vs West Indies Women, 2nd ODI, West Indies Women tour of Ireland, 2026
+2026-07-10      | 2bfa72eb-553b-4a4d-a5cc-9f07ed18e170   | Ireland Women vs West Indies Women, 1st ODI, West Indies Women tour of Ireland, 2026
+2027-02-27      | 494b9613-bff9-4471-a370-a2d33b1381d9   | India vs Australia, 5th Test, Australia tour of India, 2027
+2027-02-19      | 521ec752-b1dd-4d41-8990-67bea85245c5   | India vs Australia, 4th Test, Australia tour of India, 2027
+2027-02-11      | 05a6cc12-3f49-4fb1-83a6-5e5a1ef035f0   | India vs Australia, 3rd Test, Australia tour of India, 2027
+2027-01-29      | c8ed3959-fa9b-4242-8d38-02bdc56a1698   | India vs Australia, 2nd Test, Australia tour of India, 2027
+2027-01-21      | 6bd5b965-fbf4-4dfc-8e53-39fbb70545a3   | India vs Australia, 1st Test, Australia tour of India, 2027
+2027-03-25      | 08e22e11-61a3-4124-a74b-38f9869be280   | Tbc vs Tbc, Final, Sheffield Shield 2026-27
+2027-03-14      | 4a24b95d-9369-45f4-9310-49020fab6258   | Queensland vs South Australia, 30th Match, Sheffield Shield 2026-27
+2027-03-14      | 1a1bc2e1-c168-402e-809c-9bc6579be621   | Victoria vs New South Wales, 29th Match, Sheffield Shield 2026-27
+2027-03-14      | fc2074d9-1976-4061-9f19-1dfa6f9f4d3a   | Tasmania vs Western Australia, 28th Match, Sheffield Shield 2026-27
+2027-03-02      | bd985014-734b-4b12-ae14-f9bd7cbb7b60   | Western Australia vs Victoria, 27th Match, Sheffield Shield 2026-27
+2027-03-02      | 150ca5b8-55a0-4348-8232-e9eb65e5cb30   | Queensland vs New South Wales, 26th Match, Sheffield Shield 2026-27
+2027-03-02      | efd4efea-663e-4d88-8180-58d1f82eddf4   | Tasmania vs South Australia, 25th Match, Sheffield Shield 2026-27
+2027-02-20      | 409eb533-a0f8-4090-ad62-4924369dadb3   | Western Australia vs South Australia, 24th Match, Sheffield Shield 2026-27
+2027-02-20      | 0f57f810-38b9-4938-a292-6de9f04110c2   | Tasmania vs Queensland, 23rd Match, Sheffield Shield 2026-27
+2027-02-20      | 6b3bfeb9-aa2d-4408-b465-7298e4ec3250   | New South Wales vs Victoria, 22nd Match, Sheffield Shield 2026-27
+2027-02-08      | 9b7ef0ad-c525-4b9e-a0ae-2abce7fc09e8   | South Australia vs New South Wales, 21st Match, Sheffield Shield 2026-27
+2027-02-08      | 7a5e26e3-2c8f-4fc8-99ca-939bd27ac391   | Queensland vs Western Australia, 20th Match, Sheffield Shield 2026-27
+2027-02-08      | 28372ea4-5071-4864-b3f6-03a521876a94   | Victoria vs Tasmania, 19th Match, Sheffield Shield 2026-27
+2026-12-03      | 04a45005-5ec7-4378-aae4-4ae387c51e05   | South Australia vs Tasmania, 18th Match, Sheffield Shield 2026-27
+2026-12-03      | 034c10df-43e2-4f0c-8621-4505a4c3116e   | New South Wales vs Western Australia, 16th Match, Sheffield Shield 2026-27
+2026-12-03      | 0bb15b07-959a-4695-a62d-87ff5bb386e9   | Victoria vs Queensland, 17th Match, Sheffield Shield 2026-27
+2026-11-24      | 8056394a-3293-4f2f-8d88-e3b7934aa9d2   | South Australia vs Victoria, 15th Match, Sheffield Shield 2026-27
+2026-11-23      | 27ac6ffe-73c7-4900-bb05-1feedc21a61d   | Western Australia vs Tasmania, 14th Match, Sheffield Shield 2026-27
+2026-11-22      | 37a3f97c-f4f7-47f9-896a-483beae086da   | New South Wales vs Queensland, 13th Match, Sheffield Shield 2026-27
+2026-11-11      | e46111e9-6e96-4447-87c1-edbe892b222f   | Queensland vs Tasmania, 12th Match, Sheffield Shield 2026-27
+2026-11-11      | b8010e85-796f-472d-bc57-ce716405834a   | Victoria vs Western Australia, 11th Match, Sheffield Shield 2026-27
+2026-11-11      | 28620c9b-4a53-4276-bdf6-2e81813ea69f   | New South Wales vs South Australia, 10th Match, Sheffield Shield 2026-27
+2026-10-31      | 296bfb68-d612-4e46-b3e4-d1d00946750b   | Queensland vs Victoria, 9th Match, Sheffield Shield 2026-27
+2026-10-30      | f9f1adfc-6af6-4d2e-b6f0-658b8f7fde6e   | Tasmania vs New South Wales, 8th Match, Sheffield Shield 2026-27
+2026-10-28      | bac0f1bc-ed6d-4f69-ae99-340a6893e360   | South Australia vs Western Australia, 7th Match, Sheffield Shield 2026-27
+2026-10-19      | 09586a79-abed-4c9b-bccb-90b7ec10c213   | Western Australia vs New South Wales, 6th Match, Sheffield Shield 2026-27
+2026-10-19      | f931761d-50b9-45bc-abf4-f52a6ad29722   | South Australia vs Queensland, 5th Match, Sheffield Shield 2026-27
+2026-10-19      | 23c140b5-eebc-4cb1-af1e-ddb885335b30   | Tasmania vs Victoria, 4th Match, Sheffield Shield 2026-27
+2026-10-08      | f7e74b46-d393-4066-b161-738f6ac287b7   | Western Australia vs Queensland, 3rd Match, Sheffield Shield 2026-27
+2026-10-08      | f86a1b5e-83be-41b0-b2d3-4f1ae4e12a03   | New South Wales vs Tasmania, 2nd Match, Sheffield Shield 2026-27
+2026-10-07      | 956f3a64-cc60-437f-a96d-20f68f72874f   | Victoria vs South Australia, 1st Match, Sheffield Shield 2026-27
+2026-08-02      | 384afc14-e5a9-4708-b9d0-c20d329108c7   | Argentina Women vs Canada Women, 7th T20I, Canada Women tour of Argentina, 2026
+2026-08-02      | 111ba640-5c9b-4250-90b1-d1ecadff457c   | Argentina Women vs Canada Women, 6th T20I, Canada Women tour of Argentina, 2026
+2026-08-01      | e75a8c77-04ec-44c3-a591-4ac7d8102284   | Argentina Women vs Canada Women, 5th T20I, Canada Women tour of Argentina, 2026
+2026-08-01      | a623b1b3-5e13-4179-a543-6427859f4c7d   | Argentina Women vs Canada Women, 4th T20I, Canada Women tour of Argentina, 2026
+2026-07-31      | 87ba3a88-7349-413d-8d79-1735b523a128   | Argentina Women vs Canada Women, 3rd T20I, Canada Women tour of Argentina, 2026
+2026-07-30      | 7b700e72-960d-4a59-a7f5-d0d15041ada0   | Argentina Women vs Canada Women, 2nd T20I, Canada Women tour of Argentina, 2026
+2026-07-29      | c4ba3927-699d-462b-92b4-3787a4a3b2de   | Argentina Women vs Canada Women, 1st T20I, Canada Women tour of Argentina, 2026
+2026-07-14      | d70dc162-3f63-4627-958b-6ade682138ea   | Romania vs Denmark, Final, ICC Mens T20 World Cup Europe Sub Regional Qualifier B, 2026
+2026-07-14      | d52908ce-4155-4afd-a645-faf5c0bbe579   | Gibraltar vs Norway, 5th Place Play-off, ICC Mens T20 World Cup Europe Sub Regional Qualifier B, 2026
+2026-07-14      | 08acd999-b99c-4c2f-a8e1-400f62a39b5b   | Serbia vs Estonia, 7th Place Play-off, ICC Mens T20 World Cup Europe Sub Regional Qualifier B, 2026
+2026-07-14      | 4cbb2900-ca78-416e-af7f-b504cdbff048   | Belgium vs Hungary, 3rd Place Play-off, ICC Mens T20 World Cup Europe Sub Regional Qualifier B, 2026
+2026-07-13      | a7955739-8462-4364-838d-8ae1dc306828   | Estonia vs Turkey, 16th Match, ICC Mens T20 World Cup Europe Sub Regional Qualifier B, 2026
+2026-07-13      | fd06d79e-c3fd-443e-baa1-314ec1ce12f7   | Denmark vs Hungary, 15th Match, ICC Mens T20 World Cup Europe Sub Regional Qualifier B, 2026
+2026-07-12      | 4d4b2304-05d0-4ddc-b2cb-709239fafd84   | Gibraltar vs Serbia, 14th Match, ICC Mens T20 World Cup Europe Sub Regional Qualifier B, 2026
+2026-07-12      | 8bf325b1-024d-40d8-aa56-9ac25d7bda05   | Turkey vs Hungary, 13th Match, ICC Mens T20 World Cup Europe Sub Regional Qualifier B, 2026
+2026-07-12      | c65ee13b-5d2a-45e0-aa92-b2af6d849e02   | Denmark vs Norway, 11th Match, ICC Mens T20 World Cup Europe Sub Regional Qualifier B, 2026
+2026-07-12      | 53fd2b88-436c-4ab2-b0b6-2caa91fc9d16   | Belgium vs Romania, 12th Match, ICC Mens T20 World Cup Europe Sub Regional Qualifier B, 2026
+2026-07-10      | 3fc7f2f0-4aa1-4a84-9a4a-2211f828ff4a   | Norway vs Turkey, 10th Match, ICC Mens T20 World Cup Europe Sub Regional Qualifier B, 2026
+2026-07-10      | 3e7fb29b-15ef-4a88-b997-fe6893ff0955   | Serbia vs Belgium, 9th Match, ICC Mens T20 World Cup Europe Sub Regional Qualifier B, 2026
+2026-07-10      | 0e9c51c3-050f-4463-bbb2-dfa16bcab324   | Hungary vs Estonia, 8th Match, ICC Mens T20 World Cup Europe Sub Regional Qualifier B, 2026
+2026-07-10      | f40b5fba-e563-4836-85d4-da860d299550   | Gibraltar vs Romania, 7th Match, ICC Mens T20 World Cup Europe Sub Regional Qualifier B, 2026
+2026-07-09      | 8324fe88-583e-40e3-bbc7-fbf742d055ca   | Estonia vs Norway, 6th Match, ICC Mens T20 World Cup Europe Sub Regional Qualifier B, 2026
+2026-07-09      | 3cf2f732-a636-4ddb-9128-23c8633c127a   | Denmark vs Turkey, 5th Match, ICC Mens T20 World Cup Europe Sub Regional Qualifier B, 2026
+2026-07-08      | e50092e1-2869-4a56-9b21-9e56979d4439   | Romania vs Serbia, 4th Match, ICC Mens T20 World Cup Europe Sub Regional Qualifier B, 2026
+2026-07-08      | f72e7c5e-fafe-4a77-910a-2920c83e0aa6   | Norway vs Hungary, 3rd Match, ICC Mens T20 World Cup Europe Sub Regional Qualifier B, 2026
+2026-07-08      | 5f21046d-dd4f-4c48-b2d9-e38d46f213b3   | Belgium vs Gibraltar, 2nd Match, ICC Mens T20 World Cup Europe Sub Regional Qualifier B, 2026
+2026-07-08      | fc7cb4be-1674-408b-a957-f102f9d98147   | Denmark vs Estonia, 1st Match, ICC Mens T20 World Cup Europe Sub Regional Qualifier B, 2026
+2026-09-20      | e28b0343-737f-4a0a-a27a-6c6c80295d8d   | Tbc vs Tbc, Final, Caribbean Premier League 2026
+2026-09-18      | 57b9034f-2942-4394-898c-c285b78b7485   | Tbc vs Tbc, Qualifier 2, Caribbean Premier League 2026

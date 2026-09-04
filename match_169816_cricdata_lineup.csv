@@ -1,0 +1,12 @@
+name,role,team,cost,proj_points,id,is_captain,is_vice
+Hong Kong China Women Player 1,AR,Hong Kong China Women,8.0,59.6,1,False,False
+India Women Player 5,BAT,India Women,8.0,61.0,8,False,False
+Hong Kong China Women Player 5,BAT,Hong Kong China Women,8.0,61.0,9,False,False
+India Women Player 6,BAT,India Women,8.0,61.0,10,False,False
+Hong Kong China Women Player 6,BAT,Hong Kong China Women,8.0,61.0,11,False,False
+India Women Player 7,BAT,India Women,8.0,61.0,12,False,False
+Hong Kong China Women Player 7,BAT,Hong Kong China Women,8.0,61.0,13,False,False
+India Women Player 9,BOWL,India Women,8.0,51.8,16,False,False
+Hong Kong China Women Player 10,BOWL,Hong Kong China Women,8.0,51.8,19,False,False
+India Women Player 4,WK,India Women,8.0,63.9,6,True,False
+Hong Kong China Women Player 4,WK,Hong Kong China Women,8.0,63.9,7,False,True

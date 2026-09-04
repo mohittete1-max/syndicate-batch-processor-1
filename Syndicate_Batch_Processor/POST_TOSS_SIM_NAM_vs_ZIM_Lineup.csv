@@ -1,0 +1,12 @@
+name,role,team,credits,proj,pown,selected,is_captain,is_vc
+Z Green,WK,NAM,6.0,121.9,35.0,1,0,0
+B Curran,BAT,ZIM,6.0,223.5,36.9,1,0,0
+A Volschenk,BAT,NAM,8.0,177.2,31.6,1,0,0
+B Evans,AR,ZIM,7.5,342.7,94.8,1,1,0
+B Bennett,AR,ZIM,7.5,236.1,62.9,1,0,1
+J Frylinck,AR,NAM,7.0,199.1,40.0,1,0,0
+R Trumpelmann,BOWL,NAM,6.0,177.4,32.0,1,0,0
+M Heingo,BOWL,NAM,6.5,79.3,18.0,1,0,0
+B Muzarabani,BOWL,ZIM,8.0,140.1,16.0,1,0,0
+T Lungameni,BOWL,NAM,6.5,113.1,14.0,1,0,0
+C Madande,WK,ZIM,6.5,86.9,11.0,1,0,0

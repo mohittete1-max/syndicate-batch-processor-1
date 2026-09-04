@@ -1,0 +1,394 @@
+[
+    {
+        "match_file": "SNP_vs_BBT__23rd_Match_.csv",
+        "match_id": "154540",
+        "series": "Caribbean Premier League 2026",
+        "match_title": "SNP vs BBT (23rd Match)",
+        "date": "Wed, Sep 02 2026"
+    },
+    {
+        "match_file": "BHR_vs_HKC__7th_Match__Group_A_.csv",
+        "match_id": "170231",
+        "series": "ACC Men's Premier Cup, 2026",
+        "match_title": "BHR vs HKC (7th Match, Group A)",
+        "date": "Wed, Sep 02 2026"
+    },
+    {
+        "match_file": "OMAN_vs_QAT__8th_Match__Group_B_.csv",
+        "match_id": "170241",
+        "series": "ACC Men's Premier Cup, 2026",
+        "match_title": "OMAN vs QAT (8th Match, Group B)",
+        "date": "Wed, Sep 02 2026"
+    },
+    {
+        "match_file": "CZONE_vs_EZONE__1st_Semi_Final__Day_4_.csv",
+        "match_id": "163043",
+        "series": "Duleep Trophy 2026",
+        "match_title": "CZONE vs EZONE (1st Semi-Final, Day 4)",
+        "date": "Wed, Sep 02 2026"
+    },
+    {
+        "match_file": "SZONE_vs_NZONE__2nd_Semi_Final__Day_4_.csv",
+        "match_id": "163047",
+        "series": "Duleep Trophy 2026",
+        "match_title": "SZONE vs NZONE (2nd Semi-Final, Day 4)",
+        "date": "Wed, Sep 02 2026"
+    },
+    {
+        "match_file": "MHK_vs_LDL__6th_Match_.csv",
+        "match_id": "171110",
+        "series": "Sher-E-Punjab T20 League, 2026",
+        "match_title": "MHK vs LDL (6th Match)",
+        "date": "Wed, Sep 02 2026"
+    },
+    {
+        "match_file": "FZF_vs_AMS__7th_Match_.csv",
+        "match_id": "171120",
+        "series": "Sher-E-Punjab T20 League, 2026",
+        "match_title": "FZF vs AMS (7th Match)",
+        "date": "Wed, Sep 02 2026"
+    },
+    {
+        "match_file": "RSAA_vs_BANA__2nd_Unofficial_Test__Day_4.csv",
+        "match_id": "170667",
+        "series": "Bangladesh A tour of South Africa, 2026",
+        "match_title": "RSAA vs BANA (2nd Unofficial Test, Day 4)",
+        "date": "Wed, Sep 02 2026"
+    },
+    {
+        "match_file": "DBG_vs_RDD__10th_Match_.csv",
+        "match_id": "169310",
+        "series": "European T20 Premier League 2026",
+        "match_title": "DBG vs RDD (10th Match)",
+        "date": "Wed, Sep 02 2026"
+    },
+    {
+        "match_file": "BFW_vs_ECR__11th_Match_.csv",
+        "match_id": "169313",
+        "series": "European T20 Premier League 2026",
+        "match_title": "BFW vs ECR (11th Match)",
+        "date": "Wed, Sep 02 2026"
+    },
+    {
+        "match_file": "SOM_vs_GLAM__54th_Match__Day_1_.csv",
+        "match_id": "142572",
+        "series": "County Championship Division One 2026",
+        "match_title": "SOM vs GLAM (54th Match, Day 1)",
+        "date": "Wed, Sep 02 2026"
+    },
+    {
+        "match_file": "HAM_vs_WARKS__55th_Match__Day_1_.csv",
+        "match_id": "142583",
+        "series": "County Championship Division One 2026",
+        "match_title": "HAM vs WARKS (55th Match, Day 1)",
+        "date": "Wed, Sep 02 2026"
+    },
+    {
+        "match_file": "NOTTS_vs_LEIC__53rd_Match__Day_1_.csv",
+        "match_id": "142561",
+        "series": "County Championship Division One 2026",
+        "match_title": "NOTTS vs LEIC (53rd Match, Day 1)",
+        "date": "Wed, Sep 02 2026"
+    },
+    {
+        "match_file": "SUR_vs_YORKS__52nd_Match__Day_1_.csv",
+        "match_id": "142550",
+        "series": "County Championship Division One 2026",
+        "match_title": "SUR vs YORKS (52nd Match, Day 1)",
+        "date": "Wed, Sep 02 2026"
+    },
+    {
+        "match_file": "ESS_vs_SUS__51st_Match__Day_1_.csv",
+        "match_id": "142539",
+        "series": "County Championship Division One 2026",
+        "match_title": "ESS vs SUS (51st Match, Day 1)",
+        "date": "Wed, Sep 02 2026"
+    },
+    {
+        "match_file": "GLOUCS_vs_DERBY__41st_Match__Day_1_.csv",
+        "match_id": "143152",
+        "series": "County Championship Division Two 2026",
+        "match_title": "GLOUCS vs DERBY (41st Match, Day 1)",
+        "date": "Wed, Sep 02 2026"
+    },
+    {
+        "match_file": "KENT_vs_WORCS__42nd_Match__Day_1_.csv",
+        "match_id": "143163",
+        "series": "County Championship Division Two 2026",
+        "match_title": "KENT vs WORCS (42nd Match, Day 1)",
+        "date": "Wed, Sep 02 2026"
+    },
+    {
+        "match_file": "NHNTS_vs_DUR__43rd_Match__Day_1_.csv",
+        "match_id": "143174",
+        "series": "County Championship Division Two 2026",
+        "match_title": "NHNTS vs DUR (43rd Match, Day 1)",
+        "date": "Wed, Sep 02 2026"
+    },
+    {
+        "match_file": "MDX_vs_LANCS__44th_Match__Day_1_.csv",
+        "match_id": "143185",
+        "series": "County Championship Division Two 2026",
+        "match_title": "MDX vs LANCS (44th Match, Day 1)",
+        "date": "Wed, Sep 02 2026"
+    },
+    {
+        "match_file": "SLW_vs_IDNW__Match_6__Group_B_.csv",
+        "match_id": "169830",
+        "series": "Women's Asia Cup 2026",
+        "match_title": "SLW vs IDNW (Match 6, Group B)",
+        "date": "Wed, Sep 02 2026"
+    },
+    {
+        "match_file": "TKR_vs_ABF__24th_Match_.csv",
+        "match_id": "154551",
+        "series": "Caribbean Premier League 2026",
+        "match_title": "TKR vs ABF (24th Match)",
+        "date": "Thu, Sep 03 2026"
+    },
+    {
+        "match_file": "MLY_vs_NEP__10th_Match__Group_A_.csv",
+        "match_id": "170261",
+        "series": "ACC Men's Premier Cup, 2026",
+        "match_title": "MLY vs NEP (10th Match, Group A)",
+        "date": "Thu, Sep 03 2026"
+    },
+    {
+        "match_file": "KUW_vs_UAE__9th_Match__Group_B_.csv",
+        "match_id": "170251",
+        "series": "ACC Men's Premier Cup, 2026",
+        "match_title": "KUW vs UAE (9th Match, Group B)",
+        "date": "Thu, Sep 03 2026"
+    },
+    {
+        "match_file": "BTR_vs_JLW__8th_Match_.csv",
+        "match_id": "171127",
+        "series": "Sher-E-Punjab T20 League, 2026",
+        "match_title": "BTR vs JLW (8th Match)",
+        "date": "Thu, Sep 03 2026"
+    },
+    {
+        "match_file": "FZF_vs_MHK__9th_Match_.csv",
+        "match_id": "171137",
+        "series": "Sher-E-Punjab T20 League, 2026",
+        "match_title": "FZF vs MHK (9th Match)",
+        "date": "Thu, Sep 03 2026"
+    },
+    {
+        "match_file": "NAM_vs_ZIM__5th_Match_.csv",
+        "match_id": "170010",
+        "series": "Namibia T20I Tri-Series 2026",
+        "match_title": "NAM vs ZIM (5th Match)",
+        "date": "Thu, Sep 03 2026"
+    },
+    {
+        "match_file": "ENGW_vs_IREW__2nd_ODI_.csv",
+        "match_id": "129535",
+        "series": "Ireland Women tour of England 2026",
+        "match_title": "ENGW vs IREW (2nd ODI)",
+        "date": "Thu, Sep 03 2026"
+    },
+    {
+        "match_file": "ADF_vs_GGC__12th_Match_.csv",
+        "match_id": "169320",
+        "series": "European T20 Premier League 2026",
+        "match_title": "ADF vs GGC (12th Match)",
+        "date": "Thu, Sep 03 2026"
+    },
+    {
+        "match_file": "INDW_vs_HKC_W__Match_7__Group_A_.csv",
+        "match_id": "169841",
+        "series": "Women's Asia Cup 2026",
+        "match_title": "INDW vs HKC W (Match 7, Group A)",
+        "date": "Thu, Sep 03 2026"
+    },
+    {
+        "match_file": "SNP_vs_SLK__25th_Match_.csv",
+        "match_id": "154562",
+        "series": "Caribbean Premier League 2026",
+        "match_title": "SNP vs SLK (25th Match)",
+        "date": "Fri, Sep 04 2026"
+    },
+    {
+        "match_file": "QAT_vs_SIN__11th_Match__Group_B_.csv",
+        "match_id": "170271",
+        "series": "ACC Men's Premier Cup, 2026",
+        "match_title": "QAT vs SIN (11th Match, Group B)",
+        "date": "Fri, Sep 04 2026"
+    },
+    {
+        "match_file": "BHR_vs_SAU__12th_Match__Group_A_.csv",
+        "match_id": "170277",
+        "series": "ACC Men's Premier Cup, 2026",
+        "match_title": "BHR vs SAU (12th Match, Group A)",
+        "date": "Fri, Sep 04 2026"
+    },
+    {
+        "match_file": "BTR_vs_AMS__10th_Match_.csv",
+        "match_id": "171143",
+        "series": "Sher-E-Punjab T20 League, 2026",
+        "match_title": "BTR vs AMS (10th Match)",
+        "date": "Fri, Sep 04 2026"
+    },
+    {
+        "match_file": "LDL_vs_JLW__11th_Match_.csv",
+        "match_id": "171150",
+        "series": "Sher-E-Punjab T20 League, 2026",
+        "match_title": "LDL vs JLW (11th Match)",
+        "date": "Fri, Sep 04 2026"
+    },
+    {
+        "match_file": "BELW_vs_PORTW__1st_Match_.csv",
+        "match_id": "170840",
+        "series": " Czech Republic Women's T20I Tri-Series 2026",
+        "match_title": "BELW vs PORTW (1st Match)",
+        "date": "Fri, Sep 04 2026"
+    },
+    {
+        "match_file": "CZEW_vs_PORTW__2nd_Match_.csv",
+        "match_id": "170843",
+        "series": " Czech Republic Women's T20I Tri-Series 2026",
+        "match_title": "CZEW vs PORTW (2nd Match)",
+        "date": "Fri, Sep 04 2026"
+    },
+    {
+        "match_file": "CZEW_vs_BELW__3rd_Match_.csv",
+        "match_id": "170853",
+        "series": " Czech Republic Women's T20I Tri-Series 2026",
+        "match_title": "CZEW vs BELW (3rd Match)",
+        "date": "Fri, Sep 04 2026"
+    },
+    {
+        "match_file": "SRBW_vs_CRTW__1st_Match_.csv",
+        "match_id": "170881",
+        "series": "Serbia Women's T20I Tri-Series 2026",
+        "match_title": "SRBW vs CRTW (1st Match)",
+        "date": "Fri, Sep 04 2026"
+    },
+    {
+        "match_file": "BGRW_vs_CRTW__2nd_Match_.csv",
+        "match_id": "170883",
+        "series": "Serbia Women's T20I Tri-Series 2026",
+        "match_title": "BGRW vs CRTW (2nd Match)",
+        "date": "Fri, Sep 04 2026"
+    },
+    {
+        "match_file": "NAM_vs_RSA__6th_Match_.csv",
+        "match_id": "170011",
+        "series": "Namibia T20I Tri-Series 2026",
+        "match_title": "NAM vs RSA (6th Match)",
+        "date": "Fri, Sep 04 2026"
+    },
+    {
+        "match_file": "GGC_vs_BFW__13th_Match_.csv",
+        "match_id": "169330",
+        "series": "European T20 Premier League 2026",
+        "match_title": "GGC vs BFW (13th Match)",
+        "date": "Fri, Sep 04 2026"
+    },
+    {
+        "match_file": "UAEW_vs_IDNW__Match_8__Group_B_.csv",
+        "match_id": "169847",
+        "series": "Women's Asia Cup 2026",
+        "match_title": "UAEW vs IDNW (Match 8, Group B)",
+        "date": "Fri, Sep 04 2026"
+    },
+    {
+        "match_file": "GAW_vs_JKM__26th_Match_.csv",
+        "match_id": "154573",
+        "series": "Caribbean Premier League 2026",
+        "match_title": "GAW vs JKM (26th Match)",
+        "date": "Sat, Sep 05 2026"
+    },
+    {
+        "match_file": "MLY_vs_HKC__14th_Match__Group_A_.csv",
+        "match_id": "170297",
+        "series": "ACC Men's Premier Cup, 2026",
+        "match_title": "MLY vs HKC (14th Match, Group A)",
+        "date": "Sat, Sep 05 2026"
+    },
+    {
+        "match_file": "KUW_vs_OMAN__13th_Match__Group_B_.csv",
+        "match_id": "170287",
+        "series": "ACC Men's Premier Cup, 2026",
+        "match_title": "KUW vs OMAN (13th Match, Group B)",
+        "date": "Sat, Sep 05 2026"
+    },
+    {
+        "match_file": "BELW_vs_PORTW__4th_Match_.csv",
+        "match_id": "170861",
+        "series": " Czech Republic Women's T20I Tri-Series 2026",
+        "match_title": "BELW vs PORTW (4th Match)",
+        "date": "Sat, Sep 05 2026"
+    },
+    {
+        "match_file": "CZEW_vs_BELW__5th_Match_.csv",
+        "match_id": "170863",
+        "series": " Czech Republic Women's T20I Tri-Series 2026",
+        "match_title": "CZEW vs BELW (5th Match)",
+        "date": "Sat, Sep 05 2026"
+    },
+    {
+        "match_file": "CZEW_vs_PORTW__6th_Match_.csv",
+        "match_id": "170870",
+        "series": " Czech Republic Women's T20I Tri-Series 2026",
+        "match_title": "CZEW vs PORTW (6th Match)",
+        "date": "Sat, Sep 05 2026"
+    },
+    {
+        "match_file": "FZF_vs_BTR__12th_Match_.csv",
+        "match_id": "171153",
+        "series": "Sher-E-Punjab T20 League, 2026",
+        "match_title": "FZF vs BTR (12th Match)",
+        "date": "Sat, Sep 05 2026"
+    },
+    {
+        "match_file": "JLW_vs_MHK__13th_Match_.csv",
+        "match_id": "171157",
+        "series": "Sher-E-Punjab T20 League, 2026",
+        "match_title": "JLW vs MHK (13th Match)",
+        "date": "Sat, Sep 05 2026"
+    },
+    {
+        "match_file": "BGRW_vs_CRTW__3rd_Match_.csv",
+        "match_id": "170891",
+        "series": "Serbia Women's T20I Tri-Series 2026",
+        "match_title": "BGRW vs CRTW (3rd Match)",
+        "date": "Sat, Sep 05 2026"
+    },
+    {
+        "match_file": "SRBW_vs_BGRW__4th_Match_.csv",
+        "match_id": "170893",
+        "series": "Serbia Women's T20I Tri-Series 2026",
+        "match_title": "SRBW vs BGRW (4th Match)",
+        "date": "Sat, Sep 05 2026"
+    },
+    {
+        "match_file": "RDD_vs_ECR__14th_Match_.csv",
+        "match_id": "169337",
+        "series": "European T20 Premier League 2026",
+        "match_title": "RDD vs ECR (14th Match)",
+        "date": "Sat, Sep 05 2026"
+    },
+    {
+        "match_file": "DBG_vs_ADF__15th_Match_.csv",
+        "match_id": "169340",
+        "series": "European T20 Premier League 2026",
+        "match_title": "DBG vs ADF (15th Match)",
+        "date": "Sat, Sep 05 2026"
+    },
+    {
+        "match_file": "INDW_vs_PAKW__Match_9__Group_A_.csv",
+        "match_id": "169850",
+        "series": "Women's Asia Cup 2026",
+        "match_title": "INDW vs PAKW (Match 9, Group A)",
+        "date": "Sat, Sep 05 2026"
+    },
+    {
+        "match_file": "BTW_vs_TKRW__1st_Match_.csv",
+        "match_id": "161747",
+        "series": "Womens Caribbean Premier League 2026",
+        "match_title": "BTW vs TKRW (1st Match)",
+        "date": "Sun, Sep 06 2026"
+    }
+]

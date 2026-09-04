@@ -1,0 +1,12 @@
+player_id,name,team,role,credits,form_pts,projected_points,Multiplier,Final_EV
+1,Player A1,TEAM1,ar,7.5,250,44.5,C,89.0
+10,Player A10,TEAM1,bowl,8.5,240,43.1,VC,64.65
+8,Player A8,TEAM1,bowl,8.0,290,41.6,,41.6
+19,Player B8,TEAM2,bowl,8.0,250,40.9,,40.9
+16,Player B5,TEAM2,ar,7.0,190,40.7,,40.7
+22,Player B11,TEAM2,bowl,8.0,220,40.4,,40.4
+9,Player A9,TEAM1,bowl,7.5,330,39.8,,39.8
+21,Player B10,TEAM2,bowl,8.0,180,39.7,,39.7
+18,Player B7,TEAM2,bowl,7.5,310,39.4,,39.4
+5,Player A5,TEAM1,bat,8.5,320,30.4,,30.4
+13,Player B2,TEAM2,wk,7.5,450,28.3,,28.3

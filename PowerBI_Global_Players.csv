@@ -1,0 +1,106 @@
+Player_ID,Player_Name,National_Team,Franchise_Team,Role,Base_Credits
+1,Virat Kohli,India,Royal Challengers Bengaluru,BAT,10.0
+2,Rohit Sharma,India,Mumbai Indians,BAT,9.5
+3,Jasprit Bumrah,India,Mumbai Indians,PACE,9.5
+4,Suryakumar Yadav,India,Mumbai Indians,BAT,9.5
+5,Hardik Pandya,India,Mumbai Indians,AR,9.5
+6,Ravindra Jadeja,India,Chennai Super Kings,AR,9.0
+7,Rishabh Pant,India,Delhi Capitals,WK,9.0
+8,Shubman Gill,India,Gujarat Titans,BAT,9.0
+9,Yashasvi Jaiswal,India,Rajasthan Royals,BAT,9.0
+10,Mohammed Siraj,India,Gujarat Titans,PACE,8.5
+11,Kuldeep Yadav,India,Delhi Capitals,SPIN,8.5
+12,Arshdeep Singh,India,Punjab Kings,PACE,8.5
+13,Axar Patel,India,Delhi Capitals,AR,8.5
+14,Travis Head,Australia,Sunrisers Hyderabad,BAT,9.5
+15,Pat Cummins,Australia,Sunrisers Hyderabad,PACE,9.5
+16,Mitchell Starc,Australia,Kolkata Knight Riders,PACE,9.0
+17,Glenn Maxwell,Australia,Melbourne Stars,AR,9.0
+18,Josh Hazlewood,Australia,Royal Challengers Bengaluru,PACE,9.0
+19,Steve Smith,Australia,Sydney Sixers,BAT,9.0
+20,Marnus Labuschagne,Australia,Brisbane Heat,BAT,8.5
+21,Marcus Stoinis,Australia,Lucknow Super Giants,AR,8.5
+22,Adam Zampa,Australia,Melbourne Renegades,SPIN,8.5
+23,Cameron Green,Australia,Royal Challengers Bengaluru,AR,8.5
+24,Josh Inglis,Australia,Perth Scorchers,WK,8.5
+25,Tim David,Australia,Mumbai Indians,BAT,8.0
+26,Joe Root,England,Trent Rockets,BAT,9.5
+27,Harry Brook,England,Northern Superchargers,BAT,9.0
+28,Jos Buttler,England,Rajasthan Royals,WK,9.5
+29,Jofra Archer,England,Southern Brave,PACE,9.0
+30,Ben Stokes,England,Northern Superchargers,AR,9.5
+31,Phil Salt,England,Kolkata Knight Riders,WK,9.0
+32,Liam Livingstone,England,Birmingham Phoenix,AR,8.5
+33,Sam Curran,England,Oval Invincibles,AR,8.5
+34,Gus Atkinson,England,Oval Invincibles,PACE,8.5
+35,Adil Rashid,England,Northern Superchargers,SPIN,8.5
+36,Ben Duckett,England,Birmingham Phoenix,BAT,8.5
+37,Jamie Smith,England,Oval Invincibles,WK,8.5
+38,Shoaib Bashir,England,England Test,SPIN,8.0
+39,Babar Azam,Pakistan,Peshawar Zalmi,BAT,9.5
+40,Mohammad Rizwan,Pakistan,Multan Sultans,WK,9.0
+41,Shaheen Afridi,Pakistan,Lahore Qalandars,PACE,9.0
+42,Naseem Shah,Pakistan,Islamabad United,PACE,8.5
+43,Haris Rauf,Pakistan,Lahore Qalandars,PACE,8.5
+44,Shadab Khan,Pakistan,Islamabad United,AR,8.5
+45,Fakhar Zaman,Pakistan,Lahore Qalandars,BAT,8.5
+46,Salman Ali Agha,Pakistan,Islamabad United,AR,8.5
+47,Aamer Jamal,Pakistan,Peshawar Zalmi,AR,8.0
+48,Saud Shakeel,Pakistan,Quetta Gladiators,BAT,8.0
+49,Sajid Khan,Pakistan,Pakistan Test,SPIN,8.0
+50,Heinrich Klaasen,South Africa,Sunrisers Hyderabad,WK,9.5
+51,Kagiso Rabada,South Africa,MI Cape Town,PACE,9.0
+52,Quinton de Kock,South Africa,Durban's Super Giants,WK,9.0
+53,Aiden Markram,South Africa,Sunrisers Eastern Cape,AR,9.0
+54,David Miller,South Africa,Paarl Royals,BAT,8.5
+55,Marco Jansen,South Africa,Sunrisers Eastern Cape,AR,8.5
+56,Anrich Nortje,South Africa,Pretoria Capitals,PACE,8.5
+57,Keshav Maharaj,South Africa,Durban's Super Giants,SPIN,8.5
+58,Tristan Stubbs,South Africa,Sunrisers Eastern Cape,BAT,8.5
+59,Tabraiz Shamsi,South Africa,Paarl Royals,SPIN,8.0
+60,Nicholas Pooran,West Indies,Trinbago Knight Riders,WK,9.5
+61,Andre Russell,West Indies,Trinbago Knight Riders,AR,9.5
+62,Sunil Narine,West Indies,Trinbago Knight Riders,SPIN,9.0
+63,Roston Chase,West Indies,Saint Lucia Kings,AR,9.0
+64,Tim Seifert,New Zealand,Saint Lucia Kings,WK,9.0
+65,Shai Hope,West Indies,Guyana Amazon Warriors,WK,9.5
+66,Shimron Hetmyer,West Indies,Guyana Amazon Warriors,BAT,9.5
+67,Romario Shepherd,West Indies,Guyana Amazon Warriors,AR,9.0
+68,Matthew Forde,West Indies,Saint Lucia Kings,PACE,8.5
+69,Maheesh Theekshana,Sri Lanka,Saint Lucia Kings,SPIN,9.0
+70,Noor Ahmad,Afghanistan,Saint Lucia Kings,SPIN,8.5
+71,Dwaine Pretorius,South Africa,Guyana Amazon Warriors,AR,8.5
+72,Imran Tahir,South Africa,Guyana Amazon Warriors,SPIN,8.5
+73,Shamar Joseph,West Indies,Guyana Amazon Warriors,PACE,8.5
+74,Khary Pierre,West Indies,Guyana Amazon Warriors,SPIN,8.0
+75,Ackeem Auguste,West Indies,Saint Lucia Kings,BAT,8.0
+76,Shadley van Schalkwyk,USA,Saint Lucia Kings,PACE,8.0
+77,Jason Holder,West Indies,Barbados Royals,AR,9.0
+78,Rovman Powell,West Indies,Barbados Royals,BAT,8.5
+79,Kieron Pollard,West Indies,Trinbago Knight Riders,AR,8.5
+80,Rashid Khan,Afghanistan,Gujarat Titans,SPIN,9.5
+81,Rahmanullah Gurbaz,Afghanistan,Kolkata Knight Riders,WK,8.5
+82,Mohammad Nabi,Afghanistan,Guyana Amazon Warriors,AR,8.5
+83,Fazalhaq Farooqi,Afghanistan,Sunrisers Hyderabad,PACE,8.5
+84,Wanindu Hasaranga,Sri Lanka,Sunrisers Hyderabad,SPIN,9.0
+85,Matheesha Pathirana,Sri Lanka,Chennai Super Kings,PACE,9.0
+86,Charith Asalanka,Sri Lanka,Saint Lucia Kings,BAT,8.5
+87,Kusal Mendis,Sri Lanka,Lanka Premier League,WK,8.5
+88,Shakib Al Hasan,Bangladesh,Bangladesh Premier League,AR,9.0
+89,Mustafizur Rahman,Bangladesh,Chennai Super Kings,PACE,8.5
+90,Taskin Ahmed,Bangladesh,Bangladesh Premier League,PACE,8.0
+91,Litton Das,Bangladesh,Bangladesh Premier League,WK,8.0
+92,Varun Chakaravarthy,India,Dindigul Dragons,SPIN,9.5
+93,Baba Indrajith,India,Dindigul Dragons,WK,9.0
+94,Shivam Singh,India,Dindigul Dragons,BAT,9.0
+95,Sandeep Warrier,India,Dindigul Dragons,PACE,8.5
+96,Sanjay Yadav,India,Trichy Grand Cholas,AR,9.0
+97,Suresh Kumar,India,Trichy Grand Cholas,WK,9.0
+98,V Athisayaraj Davidson,India,Trichy Grand Cholas,PACE,8.5
+99,N Jagadeesan,India,Chepauk Super Gillies,WK,9.5
+100,Shahrukh Khan,India,Lyca Kovai Kings,BAT,9.5
+101,M Siddharth,India,Lyca Kovai Kings,SPIN,9.0
+102,Ayush Badoni,India,South Delhi Superstarz,BAT,9.5
+103,Sarthak Ranjan,India,North Delhi Strikers,BAT,9.5
+104,Mayank Dagar,India,North Delhi Strikers,SPIN,9.0
+105,Harshit Rana,India,North Delhi Strikers,PACE,9.0

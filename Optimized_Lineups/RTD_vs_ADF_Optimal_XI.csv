@@ -1,0 +1,12 @@
+player_id,name,team,role,credits,form_pts,projected_points,Multiplier,Final_EV,Actual_Points,Points_Variance,Variance_Pct
+12,Mitchell Marsh,ADF,ar,9.0,410,56.2,C,112.4,301.6,189.20000000000002,168.33
+4,Logan van Beek,RTD,ar,8.5,310,51.1,VC,76.65,210.9,134.25,175.15
+16,Bas de Leede,ADF,ar,8.0,280,47.7,,47.7,125.6,77.89999999999999,163.31
+9,David Wiese,RTD,ar,8.0,260,47.3,,47.3,129.3,82.00000000000001,173.36
+11,Roelof van der Merwe,RTD,ar,7.5,245,44.3,,44.3,121.3,77.0,173.81
+5,Anrich Nortje,RTD,bowl,8.5,350,44.2,,44.2,102.6,58.39999999999999,132.13
+22,Michael Bracewell,ADF,ar,7.5,235,44.1,,44.1,115.7,71.6,162.36
+17,Curtis Campher,ADF,ar,7.5,225,43.9,,43.9,110.5,66.6,151.71
+8,Sandeep Lamichhane,RTD,bowl,8.0,320,41.3,,41.3,105.3,64.0,154.96
+2,Heinrich Klaasen,RTD,wk,9.0,380,32.7,,32.7,103.2,70.5,215.6
+13,Steve Smith,ADF,bat,9.0,360,32.4,,32.4,110.9,78.5,242.28

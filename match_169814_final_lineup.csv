@@ -1,0 +1,12 @@
+name,role,team,cost,proj_points,id,is_captain,is_vice
+Omaima Sohail,AR,Pakistan Women,7.5,55.8,10,False,False
+Gull Feroza,BAT,Pakistan Women,8.0,64.7,2,False,False
+Sidra Ameen,BAT,Pakistan Women,8.5,64.7,3,False,False
+Naruemol Chaiwai,BAT,Thailand Women,7.5,64.7,11,False,False
+Phannita Maya,BAT,Thailand Women,7.5,64.7,18,False,True
+Rosenan Kanoh,BAT,Thailand Women,7.5,64.7,20,False,False
+Thipatcha Putthawong,BOWL,Thailand Women,8.5,55.8,13,False,False
+Sunida Chaturongrattana,BOWL,Thailand Women,7.5,55.8,21,False,False
+Muneeba Ali,WK,Pakistan Women,9.0,64.7,1,True,False
+Nannapat Koncharoenkai,WK,Thailand Women,7.5,64.7,16,False,False
+Suwanan Khiaoto,WK,Thailand Women,7.5,64.7,19,False,False

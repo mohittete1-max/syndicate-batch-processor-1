@@ -1,0 +1,5 @@
+Player,Team,Role,Salary,Projection
+Player_A,Team1,BAT,9.0,45.0
+Player_B,Team1,BOWL,8.5,40.0
+Player_C,Team2,WK,8.0,35.0
+Player_D,Team2,ALL,9.5,50.0

@@ -1,0 +1,179 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Fantasy Cricket Performance Audit</title>
+    <style>
+        body { font-family: Arial, sans-serif; background-color: #f4f6f9; margin: 0; padding: 20px; color: #333; }
+        .container { max-width: 1050px; margin: auto; background: white; padding: 30px; border-radius: 8px; box-shadow: 0 4px 12px rgba(0,0,0,0.1); }
+        h2 { color: #111; border-bottom: 2px solid #eee; padding-bottom: 10px; }
+        .cards { display: flex; gap: 20px; margin-bottom: 30px; }
+        .card { flex: 1; background: #f8f9fa; padding: 20px; border-radius: 6px; border-left: 5px solid #007bff; text-align: center; box-shadow: 0 2px 4px rgba(0,0,0,0.05); }
+        .card h3 { margin: 0; font-size: 14px; color: #666; text-transform: uppercase; }
+        .card p { margin: 10px 0 0; font-size: 24px; font-weight: bold; color: #111; }
+        .positive { color: #28a745; }
+        table { width: 100%; border-collapse: collapse; margin-top: 10px; font-size: 14px; }
+        th, td { padding: 12px 15px; text-align: left; border-bottom: 1px solid #ddd; }
+        th { background-color: #007bff; color: white; }
+        tr:hover { background-color: #f1f1f1; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Dream11 Lineup Performance Audit Dashboard</h2>
+        <div class="cards">
+            <div class="card" style="border-left-color: #6c757d;">
+                <h3>Total Projected EV</h3>
+                <p>566.95</p>
+            </div>
+            <div class="card" style="border-left-color: #17a2b8;">
+                <h3>Total Actual Points</h3>
+                <p>1536.90</p>
+            </div>
+            <div class="card" style="border-left-color: #28a745;">
+                <h3>Overall Variance</h3>
+                <p class="positive">+969.95</p>
+            </div>
+        </div>
+        <h2>Comprehensive Player Breakdown</h2>
+        <table class="dataframe table">
+  <thead>
+    <tr style="text-align: right;">
+      <th>name</th>
+      <th>team</th>
+      <th>role</th>
+      <th>credits</th>
+      <th>form_pts</th>
+      <th>Final_EV</th>
+      <th>Actual_Points</th>
+      <th>Points_Variance</th>
+      <th>Variance_Pct</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Mitchell Marsh</td>
+      <td>ADF</td>
+      <td>ar</td>
+      <td>9.0</td>
+      <td>410</td>
+      <td>112.40</td>
+      <td>301.6</td>
+      <td>189.20</td>
+      <td>168.33</td>
+    </tr>
+    <tr>
+      <td>Logan van Beek</td>
+      <td>RTD</td>
+      <td>ar</td>
+      <td>8.5</td>
+      <td>310</td>
+      <td>76.65</td>
+      <td>210.9</td>
+      <td>134.25</td>
+      <td>175.15</td>
+    </tr>
+    <tr>
+      <td>Bas de Leede</td>
+      <td>ADF</td>
+      <td>ar</td>
+      <td>8.0</td>
+      <td>280</td>
+      <td>47.70</td>
+      <td>125.6</td>
+      <td>77.90</td>
+      <td>163.31</td>
+    </tr>
+    <tr>
+      <td>David Wiese</td>
+      <td>RTD</td>
+      <td>ar</td>
+      <td>8.0</td>
+      <td>260</td>
+      <td>47.30</td>
+      <td>129.3</td>
+      <td>82.00</td>
+      <td>173.36</td>
+    </tr>
+    <tr>
+      <td>Roelof van der Merwe</td>
+      <td>RTD</td>
+      <td>ar</td>
+      <td>7.5</td>
+      <td>245</td>
+      <td>44.30</td>
+      <td>121.3</td>
+      <td>77.00</td>
+      <td>173.81</td>
+    </tr>
+    <tr>
+      <td>Anrich Nortje</td>
+      <td>RTD</td>
+      <td>bowl</td>
+      <td>8.5</td>
+      <td>350</td>
+      <td>44.20</td>
+      <td>102.6</td>
+      <td>58.40</td>
+      <td>132.13</td>
+    </tr>
+    <tr>
+      <td>Michael Bracewell</td>
+      <td>ADF</td>
+      <td>ar</td>
+      <td>7.5</td>
+      <td>235</td>
+      <td>44.10</td>
+      <td>115.7</td>
+      <td>71.60</td>
+      <td>162.36</td>
+    </tr>
+    <tr>
+      <td>Curtis Campher</td>
+      <td>ADF</td>
+      <td>ar</td>
+      <td>7.5</td>
+      <td>225</td>
+      <td>43.90</td>
+      <td>110.5</td>
+      <td>66.60</td>
+      <td>151.71</td>
+    </tr>
+    <tr>
+      <td>Sandeep Lamichhane</td>
+      <td>RTD</td>
+      <td>bowl</td>
+      <td>8.0</td>
+      <td>320</td>
+      <td>41.30</td>
+      <td>105.3</td>
+      <td>64.00</td>
+      <td>154.96</td>
+    </tr>
+    <tr>
+      <td>Heinrich Klaasen</td>
+      <td>RTD</td>
+      <td>wk</td>
+      <td>9.0</td>
+      <td>380</td>
+      <td>32.70</td>
+      <td>103.2</td>
+      <td>70.50</td>
+      <td>215.60</td>
+    </tr>
+    <tr>
+      <td>Steve Smith</td>
+      <td>ADF</td>
+      <td>bat</td>
+      <td>9.0</td>
+      <td>360</td>
+      <td>32.40</td>
+      <td>110.9</td>
+      <td>78.50</td>
+      <td>242.28</td>
+    </tr>
+  </tbody>
+</table>
+    </div>
+</body>
+</html>

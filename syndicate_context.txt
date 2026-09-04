@@ -1,0 +1,16 @@
+INSERT INTO match_performance_logs (
+    match_id, match_name, player_name, team, role, credits, 
+    projected_points, base_pOWN, captain_pOWN, vice_captain_pOWN, 
+    is_selected, is_captain, is_vice_captain
+) VALUES 
+('169815', 'Sri Lanka Women vs Indonesia Women', 'Putu Ayu Nanda Sakarini', 'Indonesia Women', 'WK', 6.0, 60.4, 33.3, 0.32, 0.43, TRUE, TRUE, FALSE),
+('169815', 'Sri Lanka Women vs Indonesia Women', 'C Athapaththu', 'Sri Lanka Women', 'AR', 9.0, 53.5, 94.6, 69.75, 6.79, TRUE, FALSE, TRUE),
+('169815', 'Sri Lanka Women vs Indonesia Women', 'K Nuthyangana', 'Sri Lanka Women', 'WK', 7.5, 20.0, 70.6, 0.55, 0.53, TRUE, FALSE, FALSE),
+('169815', 'Sri Lanka Women vs Indonesia Women', 'N Silva', 'Sri Lanka Women', 'BAT', 8.5, 4.0, 7.1, 0.42, 0.47, TRUE, FALSE, FALSE),
+('169815', 'Sri Lanka Women vs Indonesia Women', 'I Dulani', 'Sri Lanka Women', 'BAT', 6.5, 55.0, 87.3, 2.66, 5.20, TRUE, FALSE, FALSE),
+('169815', 'Sri Lanka Women vs Indonesia Women', 'K Dilhari', 'Sri Lanka Women', 'AR', 8.5, 62.0, 91.3, 4.52, 18.64, TRUE, FALSE, FALSE),
+('169815', 'Sri Lanka Women vs Indonesia Women', 'Luh Dewi', 'Indonesia Women', 'AR', 8.0, 90.0, 80.4, 1.59, 4.97, TRUE, FALSE, FALSE),
+('169815', 'Sri Lanka Women vs Indonesia Women', 'Kadek Fitria Rada Rani', 'Indonesia Women', 'AR', 6.0, 10.0, 12.0, 0.12, 0.24, TRUE, FALSE, FALSE),
+('169815', 'Sri Lanka Women vs Indonesia Women', 'Made Putri Suwandewi', 'Indonesia Women', 'AR', 6.0, 55.0, 61.6, 0.33, 0.83, TRUE, FALSE, FALSE),
+('169815', 'Sri Lanka Women vs Indonesia Women', 'S Maypriani', 'Indonesia Women', 'BOWL', 7.5, 17.0, 5.5, 0.06, 0.13, TRUE, FALSE, FALSE),
+('169815', 'Sri Lanka Women vs Indonesia Women', 'C Praboda', 'Sri Lanka Women', 'BOWL', 6.0, 27.0, 51.8, 0.68, 1.56, TRUE, FALSE, FALSE);

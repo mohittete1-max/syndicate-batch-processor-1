@@ -1,0 +1,323 @@
+{
+  "metadata": {
+    "match_name": "Belfast Wolves vs Dublin Guardians",
+    "home_team": "Belfast Wolves",
+    "away_team": "Dublin Guardians",
+    "home_code": "BWV",
+    "away_code": "DNG",
+    "venue_default_total": 165.5
+  },
+  "vegas_market": {
+    "total_line": 165.5,
+    "pace_multiplier": 1.034,
+    "source": "ETPL Historical Baseline Model"
+  },
+  "players": [
+    {
+      "name": "L Tucker",
+      "team": "BWV",
+      "role": "WK",
+      "credits": 7.5,
+      "base_ev": 42.0,
+      "is_anchor": false,
+      "projected_ev": 43.4
+    },
+    {
+      "name": "D Miller",
+      "team": "BWV",
+      "role": "BAT",
+      "credits": 9.0,
+      "base_ev": 48.0,
+      "is_anchor": false,
+      "projected_ev": 49.6
+    },
+    {
+      "name": "P Stirling",
+      "team": "BWV",
+      "role": "BAT",
+      "credits": 8.5,
+      "base_ev": 44.0,
+      "is_anchor": false,
+      "projected_ev": 45.5
+    },
+    {
+      "name": "D Conway",
+      "team": "BWV",
+      "role": "BAT",
+      "credits": 8.0,
+      "base_ev": 38.0,
+      "is_anchor": false,
+      "projected_ev": 39.3
+    },
+    {
+      "name": "T Tector",
+      "team": "BWV",
+      "role": "BAT",
+      "credits": 8.0,
+      "base_ev": 28.0,
+      "is_anchor": false,
+      "projected_ev": 29.0
+    },
+    {
+      "name": "M Chapman",
+      "team": "BWV",
+      "role": "BAT",
+      "credits": 7.5,
+      "base_ev": 30.0,
+      "is_anchor": false,
+      "projected_ev": 31.0
+    },
+    {
+      "name": "G Maxwell",
+      "team": "BWV",
+      "role": "AR",
+      "credits": 8.5,
+      "base_ev": 68.0,
+      "is_anchor": true,
+      "projected_ev": 80.9
+    },
+    {
+      "name": "M Adair",
+      "team": "BWV",
+      "role": "AR",
+      "credits": 6.0,
+      "base_ev": 46.0,
+      "is_anchor": false,
+      "projected_ev": 47.6
+    },
+    {
+      "name": "H Manenti",
+      "team": "BWV",
+      "role": "AR",
+      "credits": 6.0,
+      "base_ev": 24.0,
+      "is_anchor": false,
+      "projected_ev": 24.8
+    },
+    {
+      "name": "C Jordan",
+      "team": "BWV",
+      "role": "BOWL",
+      "credits": 8.5,
+      "base_ev": 50.0,
+      "is_anchor": false,
+      "projected_ev": 51.7
+    },
+    {
+      "name": "C Kalugamage",
+      "team": "BWV",
+      "role": "BOWL",
+      "credits": 8.5,
+      "base_ev": 36.0,
+      "is_anchor": false,
+      "projected_ev": 37.2
+    },
+    {
+      "name": "S Netravalkar",
+      "team": "BWV",
+      "role": "BOWL",
+      "credits": 7.5,
+      "base_ev": 38.0,
+      "is_anchor": false,
+      "projected_ev": 39.3
+    },
+    {
+      "name": "G Hoey",
+      "team": "BWV",
+      "role": "BOWL",
+      "credits": 7.0,
+      "base_ev": 22.0,
+      "is_anchor": false,
+      "projected_ev": 22.7
+    },
+    {
+      "name": "F Klaassen",
+      "team": "BWV",
+      "role": "BOWL",
+      "credits": 7.0,
+      "base_ev": 26.0,
+      "is_anchor": false,
+      "projected_ev": 26.9
+    },
+    {
+      "name": "M Humphreys",
+      "team": "BWV",
+      "role": "BOWL",
+      "credits": 7.0,
+      "base_ev": 20.0,
+      "is_anchor": false,
+      "projected_ev": 20.7
+    },
+    {
+      "name": "Z Ihsan",
+      "team": "BWV",
+      "role": "BOWL",
+      "credits": 7.0,
+      "base_ev": 18.0,
+      "is_anchor": false,
+      "projected_ev": 18.6
+    },
+    {
+      "name": "A Roy",
+      "team": "BWV",
+      "role": "BOWL",
+      "credits": 7.0,
+      "base_ev": 15.0,
+      "is_anchor": false,
+      "projected_ev": 15.5
+    },
+    {
+      "name": "B Calitz",
+      "team": "DNG",
+      "role": "WK",
+      "credits": 7.0,
+      "base_ev": 22.0,
+      "is_anchor": false,
+      "projected_ev": 22.7
+    },
+    {
+      "name": "N Croes",
+      "team": "DNG",
+      "role": "WK",
+      "credits": 6.5,
+      "base_ev": 20.0,
+      "is_anchor": false,
+      "projected_ev": 20.7
+    },
+    {
+      "name": "J Vince",
+      "team": "DNG",
+      "role": "BAT",
+      "credits": 8.0,
+      "base_ev": 46.0,
+      "is_anchor": false,
+      "projected_ev": 47.6
+    },
+    {
+      "name": "D Mitchell",
+      "team": "DNG",
+      "role": "BAT",
+      "credits": 8.0,
+      "base_ev": 42.0,
+      "is_anchor": false,
+      "projected_ev": 43.4
+    },
+    {
+      "name": "M Waseem",
+      "team": "DNG",
+      "role": "BAT",
+      "credits": 7.5,
+      "base_ev": 34.0,
+      "is_anchor": false,
+      "projected_ev": 35.2
+    },
+    {
+      "name": "S Krishnamurthi",
+      "team": "DNG",
+      "role": "BAT",
+      "credits": 6.0,
+      "base_ev": 20.0,
+      "is_anchor": false,
+      "projected_ev": 20.7
+    },
+    {
+      "name": "H Tector",
+      "team": "DNG",
+      "role": "AR",
+      "credits": 9.0,
+      "base_ev": 62.0,
+      "is_anchor": true,
+      "projected_ev": 73.7
+    },
+    {
+      "name": "V Shankar",
+      "team": "DNG",
+      "role": "AR",
+      "credits": 9.0,
+      "base_ev": 52.0,
+      "is_anchor": false,
+      "projected_ev": 53.8
+    },
+    {
+      "name": "H Singh",
+      "team": "DNG",
+      "role": "AR",
+      "credits": 7.5,
+      "base_ev": 30.0,
+      "is_anchor": false,
+      "projected_ev": 31.0
+    },
+    {
+      "name": "G Dockrell",
+      "team": "DNG",
+      "role": "AR",
+      "credits": 7.5,
+      "base_ev": 32.0,
+      "is_anchor": false,
+      "projected_ev": 33.1
+    },
+    {
+      "name": "R Ashwin",
+      "team": "DNG",
+      "role": "AR",
+      "credits": 7.0,
+      "base_ev": 54.0,
+      "is_anchor": true,
+      "projected_ev": 64.2
+    },
+    {
+      "name": "C Wood",
+      "team": "DNG",
+      "role": "BOWL",
+      "credits": 7.5,
+      "base_ev": 40.0,
+      "is_anchor": false,
+      "projected_ev": 41.4
+    },
+    {
+      "name": "P Hatzoglou",
+      "team": "DNG",
+      "role": "BOWL",
+      "credits": 7.5,
+      "base_ev": 24.0,
+      "is_anchor": false,
+      "projected_ev": 24.8
+    },
+    {
+      "name": "J Little",
+      "team": "DNG",
+      "role": "BOWL",
+      "credits": 7.0,
+      "base_ev": 44.0,
+      "is_anchor": false,
+      "projected_ev": 45.5
+    },
+    {
+      "name": "C Young",
+      "team": "DNG",
+      "role": "BOWL",
+      "credits": 7.0,
+      "base_ev": 28.0,
+      "is_anchor": false,
+      "projected_ev": 29.0
+    },
+    {
+      "name": "M Hollard",
+      "team": "DNG",
+      "role": "BOWL",
+      "credits": 7.0,
+      "base_ev": 22.0,
+      "is_anchor": false,
+      "projected_ev": 22.7
+    },
+    {
+      "name": "C Greaves",
+      "team": "DNG",
+      "role": "BOWL",
+      "credits": 6.0,
+      "base_ev": 24.0,
+      "is_anchor": false,
+      "projected_ev": 24.8
+    }
+  ]
+}

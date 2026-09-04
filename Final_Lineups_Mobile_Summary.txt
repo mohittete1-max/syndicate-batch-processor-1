@@ -1,0 +1,120 @@
+=======================================================
+SYNDICATE OS - MATHEMATICALLY OPTIMAL REPORT
+Match: RSA vs ZIM | Match ID: 170000
+Series: Namibia T20I Tri-Series 2026
+Toss Winner: RSA (FIELD)
+=======================================================
+
+[CONSERVATIVE H2H LINEUP (Raw EV: 1367.0 Pts | Credits: 91.0/100)]
+Captain (C - Anchor Lock): Sikandar Raza (ZIM) [Proj: 129.83]
+Vice-Captain (VC - Anchor Lock): Brian Bennett (ZIM) [Proj: 125.13]
+Core 11:
+ - Jordan Hermann (RSA) [BAT] | Proj: 82.12 | Own: 24.0% | Cr: 7.5
+ - Dewald Brevis (RSA) [BAT] | Proj: 105.58 | Own: 78.0% | Cr: 9.0
+ - Duan Jansen (RSA) [AR] | Proj: 111.94 | Own: 30.0% | Cr: 8.0
+ - Kwena Maphaka (RSA) [BOWL] | Proj: 91.56 | Own: 45.0% | Cr: 8.5
+ - Andile Simelane (RSA) [AR] | Proj: 116.62 | Own: 25.0% | Cr: 7.5
+ - Sikandar Raza (ZIM) [AR] | Proj: 129.83 | Own: 82.0% | Cr: 9.5
+ - Brian Bennett (ZIM) [AR] | Proj: 125.13 | Own: 55.0% | Cr: 8.5
+ - Ryan Burl (ZIM) [AR] | Proj: 121.48 | Own: 52.0% | Cr: 8.5
+ - Blessing Muzarabani (ZIM) [BOWL] | Proj: 88.03 | Own: 48.0% | Cr: 8.5
+ - Brad Evans (ZIM) [AR] | Proj: 121.26 | Own: 35.0% | Cr: 8.0
+ - Tadiwanashe Marumani (ZIM) [WK] | Proj: 81.06 | Own: 22.0% | Cr: 7.5
+
+[GPP OX ALPHA LINEUP (Simulated EV: 1366.9 Pts | Credits: 91.0/100)]
+Captain (C - Safe Anchor Lock): Sikandar Raza (ZIM) [Proj: 129.83]
+Vice-Captain (VC - Safe Anchor Lock): Brian Bennett (ZIM) [Proj: 125.13]
+OX Alpha Core (Differential Leverage Active):
+ - Dewald Brevis (RSA) [BAT] | OX-Score: 116.03 | Own: 78.0% | Cr: 9.0
+ - Tony de Zorzi (RSA) [BAT] | OX-Score: 111.49 | Own: 20.0% | Cr: 7.5
+ - Duan Jansen (RSA) [AR] | OX-Score: 147.2 | Own: 30.0% | Cr: 8.0
+ - Kwena Maphaka (RSA) [BOWL] | OX-Score: 114.22 | Own: 45.0% | Cr: 8.5
+ - Andile Simelane (RSA) [AR] | OX-Score: 155.98 | Own: 25.0% | Cr: 7.5
+ - Sikandar Raza (ZIM) [AR] | OX-Score: 140.35 | Own: 82.0% | Cr: 9.5
+ - Brian Bennett (ZIM) [AR] | OX-Score: 150.47 | Own: 55.0% | Cr: 8.5
+ - Ryan Burl (ZIM) [AR] | OX-Score: 147.72 | Own: 52.0% | Cr: 8.5
+ - Blessing Muzarabani (ZIM) [BOWL] | OX-Score: 108.63 | Own: 48.0% | Cr: 8.5
+ - Brad Evans (ZIM) [AR] | OX-Score: 156.73 | Own: 35.0% | Cr: 8.0
+ - Tadiwanashe Marumani (ZIM) [WK] | OX-Score: 109.51 | Own: 22.0% | Cr: 7.5
+
+
+=======================================================
+SYNDICATE OS - MATHEMATICALLY OPTIMAL REPORT
+Match: ENGW vs IREW | Match ID: 129530
+Series: Ireland Women tour of England 2026
+Toss Winner: ENGW (FIELD)
+=======================================================
+
+[CONSERVATIVE H2H LINEUP (Raw EV: 1312.2 Pts | Credits: 90.0/100)]
+Captain (C - Anchor Lock): Alice Capsey (ENGW) [Proj: 129.5]
+Vice-Captain (VC - Anchor Lock): Leah Paul (IREW) [Proj: 118.69]
+Core 11:
+ - Sophia Dunkley (ENGW) [BAT] | Proj: 94.35 | Own: 55.0% | Cr: 8.5
+ - Mady Villiers (ENGW) [BOWL] | Proj: 90.07 | Own: 42.0% | Cr: 8.0
+ - Charlie Dean (ENGW) [AR] | Proj: 97.39 | Own: 52.0% | Cr: 8.5
+ - Alice Capsey (ENGW) [AR] | Proj: 129.5 | Own: 65.0% | Cr: 9.0
+ - Gaby Lewis (IREW) [BAT] | Proj: 95.79 | Own: 62.0% | Cr: 8.5
+ - Leah Paul (IREW) [AR] | Proj: 118.69 | Own: 40.0% | Cr: 8.0
+ - Cara Murray (IREW) [BOWL] | Proj: 84.95 | Own: 35.0% | Cr: 7.5
+ - Orla Prendergast (IREW) [AR] | Proj: 109.59 | Own: 55.0% | Cr: 8.5
+ - Arlene Kelly (IREW) [AR] | Proj: 111.84 | Own: 45.0% | Cr: 8.0
+ - Amy Hunter (IREW) [WK] | Proj: 86.02 | Own: 48.0% | Cr: 8.0
+ - Georgina Dempsey (IREW) [AR] | Proj: 105.15 | Own: 25.0% | Cr: 7.5
+
+[GPP OX ALPHA LINEUP (Simulated EV: 1296.2 Pts | Credits: 86.5/100)]
+Captain (C - Safe Anchor Lock): Alice Capsey (ENGW) [Proj: 129.5]
+Vice-Captain (VC - Safe Anchor Lock): Leah Paul (IREW) [Proj: 118.69]
+OX Alpha Core (Differential Leverage Active):
+ - Sophia Dunkley (ENGW) [BAT] | OX-Score: 113.46 | Own: 55.0% | Cr: 8.5
+ - Mady Villiers (ENGW) [BOWL] | OX-Score: 113.58 | Own: 42.0% | Cr: 8.0
+ - Dani Gibson (ENGW) [AR] | OX-Score: 125.88 | Own: 30.0% | Cr: 7.5
+ - Alice Capsey (ENGW) [AR] | OX-Score: 149.9 | Own: 65.0% | Cr: 9.0
+ - Gaby Lewis (IREW) [BAT] | OX-Score: 112.17 | Own: 62.0% | Cr: 8.5
+ - Louise Little (IREW) [AR] | OX-Score: 140.38 | Own: 15.0% | Cr: 7.0
+ - Leah Paul (IREW) [AR] | OX-Score: 150.74 | Own: 40.0% | Cr: 8.0
+ - Cara Murray (IREW) [BOWL] | OX-Score: 109.8 | Own: 35.0% | Cr: 7.5
+ - Arlene Kelly (IREW) [AR] | OX-Score: 139.52 | Own: 45.0% | Cr: 8.0
+ - Georgina Dempsey (IREW) [AR] | OX-Score: 140.64 | Own: 25.0% | Cr: 7.5
+ - Christina Coulter Reilly (IREW) [WK] | OX-Score: 111.33 | Own: 12.0% | Cr: 7.0
+
+
+=======================================================
+SYNDICATE OS - MATHEMATICALLY OPTIMAL REPORT
+Match: PAKW vs THAIW | Match ID: 169821
+Series: Women's Asia Cup 2026
+Toss Winner: PAKW (FIELD)
+=======================================================
+
+[CONSERVATIVE H2H LINEUP (Raw EV: 1277.0 Pts | Credits: 90.0/100)]
+Captain (C - Anchor Lock): Omaima Sohail (PAKW) [Proj: 114.7]
+Vice-Captain (VC - Anchor Lock): Chanida Sutthiruang (THAIW) [Proj: 111.64]
+Core 11:
+ - Fatima Sana (PAKW) [AR] | Proj: 107.25 | Own: 75.0% | Cr: 9.0
+ - Muneeba Ali (PAKW) [WK] | Proj: 93.14 | Own: 62.0% | Cr: 8.5
+ - Nashra Sandhu (PAKW) [BOWL] | Proj: 96.38 | Own: 68.0% | Cr: 8.5
+ - Tuba Hassan (PAKW) [AR] | Proj: 110.91 | Own: 48.0% | Cr: 8.0
+ - Omaima Sohail (PAKW) [AR] | Proj: 114.7 | Own: 28.0% | Cr: 7.5
+ - Nannapat Koncharoenkai (THAIW) [WK] | Proj: 80.74 | Own: 52.0% | Cr: 8.0
+ - Nattakan Chantham (THAIW) [BAT] | Proj: 87.19 | Own: 65.0% | Cr: 8.5
+ - Thipatcha Putthawong (THAIW) [AR] | Proj: 106.93 | Own: 58.0% | Cr: 8.5
+ - Chanida Sutthiruang (THAIW) [AR] | Proj: 111.64 | Own: 49.0% | Cr: 8.0
+ - Suleeporn Laomi (THAIW) [BOWL] | Proj: 87.03 | Own: 45.0% | Cr: 8.0
+ - Onnicha Kamchomphu (THAIW) [AR] | Proj: 110.62 | Own: 32.0% | Cr: 7.5
+
+[GPP OX ALPHA LINEUP (Simulated EV: 1268.2 Pts | Credits: 87.5/100)]
+Captain (C - Safe Anchor Lock): Omaima Sohail (PAKW) [Proj: 114.7]
+Vice-Captain (VC - Safe Anchor Lock): Chanida Sutthiruang (THAIW) [Proj: 111.64]
+OX Alpha Core (Differential Leverage Active):
+ - Muneeba Ali (PAKW) [WK] | OX-Score: 109.07 | Own: 62.0% | Cr: 8.5
+ - Nashra Sandhu (PAKW) [BOWL] | OX-Score: 110.26 | Own: 68.0% | Cr: 8.5
+ - Tuba Hassan (PAKW) [AR] | OX-Score: 136.86 | Own: 48.0% | Cr: 8.0
+ - Omaima Sohail (PAKW) [AR] | OX-Score: 151.86 | Own: 28.0% | Cr: 7.5
+ - Naruemol Chaiwai (THAIW) [BAT] | OX-Score: 101.97 | Own: 35.0% | Cr: 7.5
+ - Nattakan Chantham (THAIW) [BAT] | OX-Score: 100.92 | Own: 65.0% | Cr: 8.5
+ - Thipatcha Putthawong (THAIW) [AR] | OX-Score: 127.14 | Own: 58.0% | Cr: 8.5
+ - Chanida Sutthiruang (THAIW) [AR] | OX-Score: 137.26 | Own: 49.0% | Cr: 8.0
+ - Suleeporn Laomi (THAIW) [BOWL] | OX-Score: 108.57 | Own: 45.0% | Cr: 8.0
+ - Onnicha Kamchomphu (THAIW) [AR] | OX-Score: 144.47 | Own: 32.0% | Cr: 7.5
+ - Naomi Kanokporn Hamilton (THAIW) [AR] | OX-Score: 140.87 | Own: 10.0% | Cr: 7.0
+
+

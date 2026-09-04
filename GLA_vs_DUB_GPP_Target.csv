@@ -1,0 +1,12 @@
+player_name,team,role,credits,projected_points,ownership,is_playing,adjusted_pts,ceiling_pts,Multiplier
+Michael Leask,GLA,AR,9.0,113.5,28.1,1,118.79,148.4875,Base
+Peter Hatzoglou,DUB,BOWL,8.0,90.4,5.8,1,87.24,122.13599999999998,Base
+Benjamin Calitz,DUB,WK,9.5,94.8,22.8,1,91.49,114.3625,Base
+Liam Livingstone,GLA,AR,8.5,84.0,17.4,1,87.91,109.88749999999999,Base
+Harry Tector,DUB,BAT,9.5,87.9,15.7,1,84.83,106.0375,Base
+Daryl Mitchell,DUB,AR,8.5,82.3,9.4,1,79.43,99.28750000000001,Base
+James Neesham,GLA,AR,8.5,75.5,22.1,1,79.02,98.77499999999999,Base
+Chris Greaves,DUB,AR,8.5,77.5,2.8,1,74.79,93.48750000000001,Base
+Craig Young,DUB,BOWL,8.0,62.7,1.7,1,60.51,84.714,Base
+Ali Khan,GLA,BOWL,9.0,111.6,40.3,1,116.8,163.51999999999998,Captain (2x)
+Chris Wood,DUB,BOWL,7.5,110.6,8.6,1,106.74,149.43599999999998,VC (1.5x)

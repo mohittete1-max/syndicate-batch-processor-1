@@ -1,0 +1,30 @@
+Position,Name,Credits,Team,AvgPointsPerGame,Ownership
+WK,Lhuan-dre Pretorius,7.5,SA,35.0,30.0
+BAT,Jordan Hermann,8.0,SA,38.0,42.0
+BAT,Dewald Brevis,9.0,SA,56.0,84.0
+BAT,Tony de Zorzi,8.5,SA,46.0,65.0
+BAT,Rubin Hermann,7.5,SA,32.0,20.0
+WK,Connor Esterhuizen,8.0,SA,40.0,50.0
+AR,Eathan Bosch,8.0,SA,42.0,45.0
+AR,Duan Jansen,8.0,SA,44.0,48.0
+BOWL,Bjorn Fortuin,8.5,SA,50.0,72.0
+BOWL,Prenelan Subrayen,7.5,SA,32.0,25.0
+BOWL,Kwena Maphaka,8.5,SA,52.0,75.0
+AR,Andile Simelane,7.5,SA,34.0,22.0
+BOWL,Nqabayomzi Peter,8.0,SA,45.0,55.0
+BOWL,Nqobani Mokoena,7.0,SA,25.0,10.0
+BAT,Ben Curran,7.5,ZIM,30.0,25.0
+AR,Brian Bennett,8.5,ZIM,48.0,68.0
+BAT,Dion Myers,8.0,ZIM,38.0,40.0
+AR,Sikandar Raza,9.5,ZIM,68.0,92.0
+AR,Ryan Burl,8.5,ZIM,46.0,62.0
+AR,Wesley Madhavere,8.0,ZIM,36.0,35.0
+WK,Tadiwanashe Marumani,8.0,ZIM,42.0,58.0
+AR,Brad Evans,8.0,ZIM,40.0,45.0
+BOWL,Wellington Masakadza,8.0,ZIM,38.0,38.0
+BOWL,Newman Nyamhuri,7.0,ZIM,20.0,8.0
+BOWL,Blessing Muzarabani,8.5,ZIM,50.0,74.0
+WK,Tafadzwa Tsiga,7.0,ZIM,18.0,5.0
+BAT,Innocent Kaia,7.5,ZIM,28.0,18.0
+BOWL,Kundai Matigimu,7.0,ZIM,22.0,10.0
+BOWL,Graeme Cremer,7.5,ZIM,32.0,15.0

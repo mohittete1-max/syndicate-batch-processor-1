@@ -1,0 +1,12 @@
+player_name,team,role,credits,projected_points,ownership,is_playing,adjusted_pts,Multiplier
+Ali Khan,GLA,BOWL,9.0,111.6,40.3,1,116.8,Base
+Vijay Shankar,DUB,AR,9.5,119.7,48.5,1,115.52,Base
+Sanjay Krishnamurthi,DUB,AR,8.5,117.7,36.9,1,113.59,Base
+Chris Wood,DUB,BOWL,7.5,110.6,8.6,1,106.74,Base
+George Munsey,GLA,BAT,7.5,94.1,41.2,1,98.48,Base
+Jason Roy,GLA,BAT,8.5,91.7,35.8,1,95.97,Base
+Paul van Meekeren,GLA,BOWL,9.0,90.6,38.9,1,94.82,Base
+Liam Naylor,GLA,AR,8.0,89.4,56.1,1,93.56,Base
+Benjamin Calitz,DUB,WK,9.5,94.8,22.8,1,91.49,Base
+Moises Henriques,GLA,AR,8.0,115.7,55.5,1,121.09,Captain (2x)
+Michael Leask,GLA,AR,9.0,113.5,28.1,1,118.79,VC (1.5x)

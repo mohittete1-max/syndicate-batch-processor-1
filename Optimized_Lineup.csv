@@ -1,0 +1,12 @@
+Player_Name,Team,Role,Salary,Projection,pOWN%,Leverage_Score
+Team_A_Player_1,Team_A,AR,9.9,70.8,11.9,64.85
+Team_A_Player_2,Team_A,BAT,7.9,80.0,45.6,57.2
+Team_A_Player_3,Team_A,BAT,8.1,78.4,14.6,71.10000000000001
+Team_A_Player_5,Team_A,BAT,8.7,48.6,47.3,24.950000000000003
+Team_A_Player_9,Team_A,WK,8.1,50.2,9.2,45.6
+Team_B_Player_3,Team_B,BOWL,9.2,49.2,30.9,33.75
+Team_B_Player_6,Team_B,AR,9.7,74.8,18.7,65.45
+Team_B_Player_7,Team_B,BOWL,10.2,63.8,52.0,37.8
+Team_B_Player_9,Team_B,BOWL,10.1,59.7,58.2,30.6
+Team_B_Player_10,Team_B,AR,8.5,58.1,37.7,39.25
+Team_B_Player_11,Team_B,BOWL,9.0,76.3,26.4,63.099999999999994

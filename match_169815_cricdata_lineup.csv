@@ -1,0 +1,12 @@
+name,role,team,cost,proj_points,id,is_captain,is_vice
+Chamari Athapaththu,AR,Sri Lanka Women,9.5,71.5,0,False,False
+Kavisha Dilhari,AR,Sri Lanka Women,9.5,71.5,5,False,False
+Nilakshi de Silva,BAT,Sri Lanka Women,8.5,73.2,1,False,False
+Hasini Perera,BAT,Sri Lanka Women,8.5,73.2,2,False,True
+Harshitha Samarawickrama,BAT,Sri Lanka Women,9.0,73.2,4,False,False
+Imesha Dulani,BAT,Sri Lanka Women,8.0,73.2,6,False,False
+Vishmi Gunaratne,BAT,Sri Lanka Women,8.0,73.2,7,False,False
+Ni Made Putri Suwandewi,BOWL,Indonesia Women,8.0,51.8,13,False,False
+Desi Wulandari,BOWL,Indonesia Women,8.0,51.8,19,False,False
+Kaushani Nuthyangana,WK,Sri Lanka Women,8.0,76.7,8,True,False
+Ni Nanda Sakarini,WK,Indonesia Women,9.0,63.9,12,False,False

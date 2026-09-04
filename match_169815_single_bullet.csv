@@ -1,0 +1,12 @@
+name,role,team,cost,proj_points,proj_ownership,c_pOWN,vc_pOWN,id,is_captain,is_vice
+C Athapaththu,AR,Sri Lanka Women,9.0,53.5,60.0,69.75,6.79,0,False,True
+K Dilhari,AR,Sri Lanka Women,9.0,53.5,60.0,4.52,18.64,2,False,False
+W Dewi,AR,Indonesia Women,9.0,53.5,60.0,1.59,4.97,12,False,False
+N Made Suwandewi,AR,Indonesia Women,9.0,53.5,60.0,0.33,0.83,13,False,False
+F Rada Rani,AR,Indonesia Women,9.0,53.5,60.0,0.12,0.24,19,False,False
+I Dulani,BAT,Sri Lanka Women,8.5,47.7,43.2,2.66,5.2,1,False,False
+N de Silva,BAT,Sri Lanka Women,8.5,47.7,43.2,0.42,0.47,9,False,False
+C Praboda,BOWL,Sri Lanka Women,8.0,39.7,20.0,0.68,1.56,10,False,False
+S Ayu,BOWL,Indonesia Women,8.0,39.7,20.0,0.06,0.13,21,False,False
+K Nuthyangana,WK,Sri Lanka Women,9.0,60.4,80.0,0.55,0.53,6,False,False
+N Sakarini,WK,Indonesia Women,9.0,60.4,80.0,0.32,0.43,18,True,False
