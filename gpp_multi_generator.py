@@ -1,121 +1,115 @@
-import pandas as pd
 import pulp
+import pandas as pd
+import os
 
-def generate_gpp_lineups(slate_csv="vegas_adjusted_slate.csv", num_lineups=20, max_overlap=8, output_csv="vegas_gpp_20_team_portfolio.csv"):
-    print(f"Loading market-adjusted projections from: {slate_csv}")
-    try:
-        df = pd.read_csv(slate_csv)
-    except FileNotFoundError:
-        print(f"Error: '{slate_csv}' not found. Make sure you have run vegas_odds_integrator.py first.")
+def generate_gpp_portfolio():
+    input_file = "weather_and_vegas_adjusted_slate.csv"
+    output_file = "fully_compounded_gpp_portfolio.csv"
+    
+    if not os.path.exists(input_file):
+        print(f"Error: {input_file} not found. Run weather and Vegas integrators first.")
         return
-        
-    master_lineups = []
-    previous_lineups = [] 
-    
-    print(f"Initializing MILP Engine: generating {num_lineups} unique lineups (Max Overlap: {max_overlap} players)...\n")
-    
-    for lineup_num in range(1, num_lineups + 1):
-        prob = pulp.LpProblem(f"GPP_Lineup_{lineup_num}", pulp.LpMaximize)
-        
-        # 1. Decision Variables
-        player_vars = pulp.LpVariable.dicts("Player", df.index, cat='Binary')
-        captain_vars = pulp.LpVariable.dicts("Captain", df.index, cat='Binary')
-        vc_vars = pulp.LpVariable.dicts("ViceCaptain", df.index, cat='Binary')
-        
-        # 2. Objective Function: Maximize Vegas-adjusted projected points
-        prob += pulp.lpSum([
-            (df.loc[i, 'projected_points'] * player_vars[i]) + 
-            (df.loc[i, 'projected_points'] * 1.0 * captain_vars[i]) + 
-            (df.loc[i, 'projected_points'] * 0.5 * vc_vars[i]) 
-            for i in df.index
-        ])
-        
-        # 3. Core Roster & Budget Constraints
-        prob += pulp.lpSum([player_vars[i] for i in df.index]) == 11, "Total_11_Players"
-        prob += pulp.lpSum([df.loc[i, 'salary'] * player_vars[i] for i in df.index]) <= 100.0, "Salary_Cap_100"
-        
-        # 4. Multiplier Constraints (1 C, 1 VC, must be in team, cannot be same player)
-        prob += pulp.lpSum([captain_vars[i] for i in df.index]) == 1, "Exactly_1_Captain"
-        prob += pulp.lpSum([vc_vars[i] for i in df.index]) == 1, "Exactly_1_VC"
-        
-        for i in df.index:
-            prob += captain_vars[i] <= player_vars[i], f"C_in_team_{i}"
-            prob += vc_vars[i] <= player_vars[i], f"VC_in_team_{i}"
-            prob += captain_vars[i] + vc_vars[i] <= 1, f"Separate_C_VC_{i}"
-        
-        # 5. Standard DFS Role Constraints
-        prob += pulp.lpSum([player_vars[i] for i in df.index if df.loc[i, 'role'] == 'WK']) >= 1
-        prob += pulp.lpSum([player_vars[i] for i in df.index if df.loc[i, 'role'] == 'WK']) <= 4
-        
-        prob += pulp.lpSum([player_vars[i] for i in df.index if df.loc[i, 'role'] == 'BAT']) >= 3
-        prob += pulp.lpSum([player_vars[i] for i in df.index if df.loc[i, 'role'] == 'BAT']) <= 6
-        
-        prob += pulp.lpSum([player_vars[i] for i in df.index if df.loc[i, 'role'] == 'AR']) >= 1
-        prob += pulp.lpSum([player_vars[i] for i in df.index if df.loc[i, 'role'] == 'AR']) <= 4
-        
-        prob += pulp.lpSum([player_vars[i] for i in df.index if df.loc[i, 'role'] == 'BOWL']) >= 3
-        prob += pulp.lpSum([player_vars[i] for i in df.index if df.loc[i, 'role'] == 'BOWL']) <= 6
-        
-        # 6. Team Representation Limit (Max 7 from one nation/franchise)
-        teams = df['team'].unique()
-        for team in teams:
-            prob += pulp.lpSum([player_vars[i] for i in df.index if df.loc[i, 'team'] == team]) <= 7, f"Max_7_{team}"
-            
-        # 7. Portfolio Diversification (Overlap Limit against previous teams)
-        for past_lineup in previous_lineups:
-            prob += pulp.lpSum([player_vars[i] for i in past_lineup]) <= max_overlap
 
-        # Solve without verbose solver output
-        prob.solve(pulp.PULP_CBC_CMD(msg=0))
+    df = pd.read_csv(input_file)
+    print(f"Loading market and weather adjusted projections from: {input_file}")
+    
+    players = df['player'].tolist()
+    teams = df['team'].tolist()
+    roles = df['role'].tolist()
+    salaries = df['salary'].tolist()
+    projections = df['projected_points'].tolist()
+    
+    n_lineups = 20
+    max_overlap = 8
+    portfolio_results = []
+    previous_lineups_indices = []
+
+    for l_idx in range(1, n_lineups + 1):
+        prob = pulp.LpProblem(f"GPP_Lineup_{l_idx}", pulp.LpMaximize)
+        
+        x = {i: pulp.LpVariable(f"x_{i}", cat="Binary") for i in range(len(players))}
+        c = {i: pulp.LpVariable(f"c_{i}", cat="Binary") for i in range(len(players))}
+        vc = {i: pulp.LpVariable(f"vc_{i}", cat="Binary") for i in range(len(players))}
+        
+        prob += pulp.lpSum(x[i] * projections[i] + c[i] * projections[i] + vc[i] * (projections[i] * 0.5) for i in range(len(players)))
+        
+        prob += pulp.lpSum(x[i] for i in range(len(players))) == 11
+        prob += pulp.lpSum(x[i] * salaries[i] for i in range(len(players))) <= 100.0
+        
+        prob += pulp.lpSum(c[i] for i in range(len(players))) == 1
+        prob += pulp.lpSum(vc[i] for i in range(len(players))) == 1
+        
+        for i in range(len(players)):
+            prob += c[i] <= x[i]
+            prob += vc[i] <= x[i]
+            prob += c[i] + vc[i] <= 1
+            
+        wk_indices = [i for i, r in enumerate(roles) if r == 'WK']
+        bat_indices = [i for i, r in enumerate(roles) if r == 'BAT']
+        ar_indices = [i for i, r in enumerate(roles) if r == 'AR']
+        bowl_indices = [i for i, r in enumerate(roles) if r == 'BOWL']
+        
+        if wk_indices:
+            prob += pulp.lpSum(x[i] for i in wk_indices) >= 1
+            prob += pulp.lpSum(x[i] for i in wk_indices) <= 4
+        if bat_indices:
+            prob += pulp.lpSum(x[i] for i in bat_indices) >= 1
+            prob += pulp.lpSum(x[i] for i in bat_indices) <= 6
+        if ar_indices:
+            prob += pulp.lpSum(x[i] for i in ar_indices) >= 1
+            prob += pulp.lpSum(x[i] for i in ar_indices) <= 6
+        if bowl_indices:
+            prob += pulp.lpSum(x[i] for i in bowl_indices) >= 1
+            prob += pulp.lpSum(x[i] for i in bowl_indices) <= 6
+            
+        unique_teams = list(set(teams))
+        for t in unique_teams:
+            t_indices = [i for i, team in enumerate(teams) if team == t]
+            prob += pulp.lpSum(x[i] for i in t_indices) <= 7
+            
+        for prev_indices in previous_lineups_indices:
+            prob += pulp.lpSum(x[i] for i in prev_indices) <= max_overlap
+            
+        prob.solve(pulp.PULP_CBC_CMD(msg=False))
         
         if pulp.LpStatus[prob.status] != 'Optimal':
-            print(f"Reached optimization limit at Lineup {lineup_num - 1}. No additional combinations satisfy constraints.")
+            print(f"Warning: Lineup {l_idx} did not yield an optimal solution. Status: {prob.status}")
             break
             
-        selected_indices = [i for i in df.index if player_vars[i].varValue == 1]
-        previous_lineups.append(selected_indices)
+        current_indices = [i for i in range(len(players)) if pulp.value(x[i]) > 0.5]
+        previous_lineups_indices.append(current_indices)
         
-        # Extract Roster Metadata
-        c_name = ""
-        vc_name = ""
-        roster_names = []
-        for i in selected_indices:
-            if captain_vars[i].varValue == 1:
-                c_name = df.loc[i, 'player']
-            elif vc_vars[i].varValue == 1:
-                vc_name = df.loc[i, 'player']
-            else:
-                roster_names.append(df.loc[i, 'player'])
-                
-        total_salary_used = sum(df.loc[i, 'salary'] for i in selected_indices)
-        proj_score = round(pulp.value(prob.objective), 2)
+        c_player_idx = next(i for i in range(len(players)) if pulp.value(c[i]) > 0.5)
+        vc_player_idx = next(i for i in range(len(players)) if pulp.value(vc[i]) > 0.5)
         
-        lineup_data = {
-            "Lineup_Num": lineup_num,
-            "Projected_Pts": proj_score,
-            "Salary_Used": round(total_salary_used, 1),
-            "Captain": c_name,
-            "Vice_Captain": vc_name
-        }
+        total_proj = sum(projections[i] for i in current_indices) + projections[c_player_idx] + (projections[vc_player_idx] * 0.5)
+        total_salary = sum(salaries[i] for i in current_indices)
         
-        for idx, name in enumerate(roster_names, 1):
-            lineup_data[f"Player_{idx}"] = name
-            
-        master_lineups.append(lineup_data)
-        print(f"Lineup {lineup_num:02d} | Proj: {proj_score:6.2f} | Salary: {total_salary_used:4.1f}/100 | (C): {c_name:<16} | (VC): {vc_name}")
+        c_name = players[c_player_idx]
+        vc_name = players[vc_player_idx]
+        
+        print(f"Lineup {l_idx:02d} | Proj: {total_proj:.2f} | Salary: {total_salary:.1f}/100 | (C): {c_name} | (VC): {vc_name}")
+        
+        for i in current_indices:
+            tag = ""
+            if i == c_player_idx:
+                tag = "(C)"
+            elif i == vc_player_idx:
+                tag = "(VC)"
+            portfolio_results.append({
+                "lineup_id": l_idx,
+                "player": players[i],
+                "team": teams[i],
+                "role": roles[i],
+                "salary": salaries[i],
+                "projected_points": projections[i],
+                "tag": tag,
+                "total_lineup_projection": round(total_proj, 2)
+            })
 
-    # Export compiled portfolio
-    if master_lineups:
-        export_df = pd.DataFrame(master_lineups)
-        export_df.to_csv(output_csv, index=False)
-        print(f"\nPortfolio Complete: {len(export_df)} lineups exported to '{output_csv}'.")
-    else:
-        print("\nNo lineups generated.")
+    portfolio_df = pd.DataFrame(portfolio_results)
+    portfolio_df.to_csv(output_file, index=False)
+    print(f"\nPortfolio Complete: 20 fully compounded lineups exported to '{output_file}'.")
 
 if __name__ == "__main__":
-    generate_gpp_lineups(
-        slate_csv="vegas_adjusted_slate.csv", 
-        num_lineups=20, 
-        max_overlap=8, 
-        output_csv="vegas_gpp_20_team_portfolio.csv"
-    )
+    generate_gpp_portfolio()
