@@ -1,0 +1,21 @@
+player,team,role,salary,projected_points
+Virat Kohli,IND,BAT,10.5,72.5
+Rohit Sharma,IND,BAT,10.0,65.0
+Suryakumar Yadav,IND,BAT,9.5,60.0
+Hardik Pandya,IND,AR,10.0,68.0
+Jasprit Bumrah,IND,BOWL,9.5,70.0
+Ravindra Jadeja,IND,AR,9.0,55.0
+Rishabh Pant,IND,WK,8.5,50.0
+Arshdeep Singh,IND,BOWL,8.0,45.0
+Mohammed Siraj,IND,BOWL,8.5,48.0
+Jos Buttler,ENG,WK,10.5,75.0
+Jonny Bairstow,ENG,BAT,9.5,58.0
+Phil Salt,ENG,WK,8.5,49.0
+Moeen Ali,ENG,AR,9.0,52.0
+Liam Livingstone,ENG,AR,9.0,50.0
+Sam Curran,ENG,AR,9.5,62.0
+Jofra Archer,ENG,BOWL,9.5,65.0
+Adil Rashid,ENG,BOWL,9.0,55.0
+Mark Wood,ENG,BOWL,8.5,46.0
+Chris Jordan,ENG,BOWL,8.0,42.0
+Harry Brook,ENG,BAT,8.5,48.0
