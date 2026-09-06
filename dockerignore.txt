@@ -1,0 +1,18 @@
+# Ignore Git history
+.git/
+.gitignore
+
+# Ignore local Python environments and cache
+venv/
+env/
+__pycache__/
+*.pyc
+
+# Ignore locally generated outputs (let the container make fresh ones)
+*.csv
+*.html
+portfolio_report.html
+
+# Ignore IDE settings
+.vscode/
+.ipynb_checkpoints/

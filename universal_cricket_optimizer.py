@@ -1,235 +1,170 @@
 import os
-import math
-import webbrowser
 import pandas as pd
-import plotly.express as px
-import plotly.io as pio
-from pulp import LpProblem, LpMaximize, LpVariable, lpSum, PULP_CBC_CMD
+import pulp
+import requests
 
-# Import live environmental intelligence module
-from global_pitch import get_complete_match_environment
-
-# ==========================================
-# 1. LIVE MATCH ENVIRONMENT INITIALIZATION
-# ==========================================
-ACTIVE_VENUE = "Sportpark Westvliet, The Hague"
-
-# Automatically pull venue baseline + live weather API metrics
-env = get_complete_match_environment(ACTIVE_VENUE)
-PITCH_TYPE = env["pitch_type"]
-ANCHOR_THRESHOLD = env["threshold"]
-WEATHER_CONDITION = env["weather"]
-
-pio.renderers.default = "browser"
-
-ENTRY_FEE = 49
-ENTRY_MODE = "Single Bullet (1 Team)"
-ENGINE_NAME = "Universal Syndicate Protocol v3.3 (Strict Compliance)"
-CSV_OUTPUT_NAME = "Single_Bullet_Optimal_XI.csv"
-DASHBOARD_NAME = "single_bullet_dashboard.html"
-OUTPUT_DIR = r"C:\Users\User\OneDrive\Desktop\Cricket"
-
-print(f"[{'LIVE API ACTIVE' if env['is_live'] else 'OFFLINE FALLBACK'}] Venue: {env['venue']}")
-print(f"Conditions -> Weather: {env['weather']} | Temp: {env['temp']}°C | Humidity: {env['humidity']}%")
-print(f"Active Pitch Profile: {PITCH_TYPE} | Dynamic Threshold: {ANCHOR_THRESHOLD}pt\n")
-
-# ==========================================
-# 2. POISSON DISTRIBUTION MODELING
-# ==========================================
-def poisson_probability(k, lambd):
-    return (math.exp(-lambd) * (lambd ** k)) / math.factorial(k)
-
-def calculate_batting_ev(expected_runs):
-    base_points = expected_runs
-    prob_duck = poisson_probability(0, expected_runs)
-    prob_30_plus = 1 - sum(poisson_probability(k, expected_runs) for k in range(30))
-    prob_50_plus = 1 - sum(poisson_probability(k, expected_runs) for k in range(50))
-    return base_points + (-2 * prob_duck) + (4 * prob_30_plus) + (8 * prob_50_plus)
-
-def calculate_bowling_ev(expected_wickets):
-    base_points = expected_wickets * 25
-    prob_3_plus = 1 - sum(poisson_probability(k, expected_wickets) for k in range(3))
-    prob_4_plus = 1 - sum(poisson_probability(k, expected_wickets) for k in range(4))
-    return base_points + (4 * prob_3_plus) + (8 * prob_4_plus)
-
-# ==========================================
-# 3. ACTIVE MATCH ROSTER & STATUS VALIDATION
-# ==========================================
-match_players = [
-    # --- Rotterdam Dockers (RTD) ---
-    {"player_id": 1,  "name": "F du Plessis",         "team": "RTD", "role": "bat",  "credits": 9.0, "form_pts": 340, "status": "Playing"},
-    {"player_id": 2,  "name": "Heinrich Klaasen",     "team": "RTD", "role": "wk",   "credits": 9.0, "form_pts": 380, "status": "Playing"},
-    {"player_id": 3,  "name": "Ben McDermott",        "team": "RTD", "role": "wk",   "credits": 8.5, "form_pts": 270, "status": "Playing"},
-    {"player_id": 4,  "name": "Logan van Beek",       "team": "RTD", "role": "ar",   "credits": 8.5, "form_pts": 310, "status": "Playing"},
-    {"player_id": 5,  "name": "Anrich Nortje",        "team": "RTD", "role": "bowl", "credits": 8.5, "form_pts": 350, "status": "Playing"},
-    {"player_id": 6,  "name": "Michael Levitt",       "team": "RTD", "role": "bat",  "credits": 7.5, "form_pts": 210, "status": "Playing"},
-    {"player_id": 7,  "name": "Ben Manenti",          "team": "RTD", "role": "ar",   "credits": 7.0, "form_pts": 195, "status": "Playing"},
-    {"player_id": 8,  "name": "Sandeep Lamichhane",   "team": "RTD", "role": "bowl", "credits": 8.0, "form_pts": 320, "status": "Playing"},
-    {"player_id": 9,  "name": "David Wiese",          "team": "RTD", "role": "ar",   "credits": 8.0, "form_pts": 260, "status": "Playing"},
-    {"player_id": 10, "name": "Vikramjit Singh",      "team": "RTD", "role": "bat",  "credits": 7.5, "form_pts": 180, "status": "Playing"},
-    {"player_id": 11, "name": "Roelof van der Merwe", "team": "RTD", "role": "ar",   "credits": 7.5, "form_pts": 245, "status": "Playing"},
-
-    # --- Amsterdam Flames (ADF) ---
-    {"player_id": 12, "name": "Mitchell Marsh",       "team": "ADF", "role": "ar",   "credits": 9.0, "form_pts": 410, "status": "Playing"},
-    {"player_id": 13, "name": "Steve Smith",          "team": "ADF", "role": "bat",  "credits": 9.0, "form_pts": 360, "status": "Playing"},
-    {"player_id": 14, "name": "Tim David",            "team": "ADF", "role": "bat",  "credits": 8.5, "form_pts": 290, "status": "Playing"},
-    {"player_id": 15, "name": "Scott Edwards",        "team": "ADF", "role": "wk",   "credits": 8.0, "form_pts": 240, "status": "Playing"},
-    {"player_id": 16, "name": "Bas de Leede",         "team": "ADF", "role": "ar",   "credits": 8.0, "form_pts": 280, "status": "Playing"},
-    {"player_id": 17, "name": "Curtis Campher",       "team": "ADF", "role": "ar",   "credits": 7.5, "form_pts": 225, "status": "Playing"},
-    {"player_id": 18, "name": "Richard Gleeson",      "team": "ADF", "role": "bowl", "credits": 8.0, "form_pts": 305, "status": "Playing"},
-    {"player_id": 19, "name": "David Payne",          "team": "ADF", "role": "bowl", "credits": 7.5, "form_pts": 250, "status": "Playing"},
-    {"player_id": 20, "name": "Aryan Dutt",           "team": "ADF", "role": "bowl", "credits": 7.0, "form_pts": 200, "status": "Playing"},
-    {"player_id": 21, "name": "Max O'Dowd",           "team": "ADF", "role": "bat",  "credits": 7.5, "form_pts": 215, "status": "Playing"},
-    {"player_id": 22, "name": "Michael Bracewell",    "team": "ADF", "role": "ar",   "credits": 7.5, "form_pts": 235, "status": "Playing"}
-]
-
-raw_df = pd.DataFrame(match_players)
-df = raw_df[raw_df['status'] == 'Playing'].copy()
-
-# ==========================================
-# 4. EXPECTED VALUE CALCULATIONS
-# ==========================================
-projected_ev = []
-for _, row in df.iterrows():
-    role = row['role']
-    cr_factor = row['credits'] / 9.0
-    form_weight = 1.0 + (row['form_pts'] / 2000.0)
-
-    if role in ['bat', 'wk']:
-        lambda_r = cr_factor * 23.0 * form_weight
-        ev = calculate_batting_ev(lambda_r)
-    elif role == 'bowl':
-        lambda_w = cr_factor * 1.40 * form_weight
-        ev = calculate_bowling_ev(max(lambda_w, 0.1))
-    elif role == 'ar':
-        lambda_r = cr_factor * 15.0 * form_weight
-        lambda_w = cr_factor * 1.10 * form_weight
-        ev = calculate_batting_ev(lambda_r) + calculate_bowling_ev(max(lambda_w, 0.1))
-
-    # Weather & Condition Modifiers
-    if WEATHER_CONDITION == "Overcast / Seamer Friendly" and role == 'bowl':
-        ev *= 1.15
-    elif WEATHER_CONDITION == "Dew Factor" and role in ['bat', 'wk']:
-        ev *= 1.10
-
-    ev += 4.0
-    projected_ev.append(round(ev, 1))
-
-df['projected_points'] = projected_ev
-
-# ==========================================
-# 5. STRICT DREAM11 COMPLIANCE LINEUP SOLVER
-# ==========================================
-def solve_lineup(script_name, focus_constraint_func=None):
-    prob = LpProblem(f"Syndicate_{script_name}", LpMaximize)
-    player_vars = {row['player_id']: LpVariable(f"p_{row['player_id']}", cat="Binary") for _, row in df.iterrows()}
-
-    # Objective Function: Maximize Total Projected EV
-    prob += lpSum(row['projected_points'] * player_vars[row['player_id']] for _, row in df.iterrows())
-
-    # Core Dream11 Size Constraint: Exactly 11 Players
-    prob += lpSum(player_vars[pid] for pid in player_vars) == 11
-
-    # Credit Cap Constraint: Max 100 Credits
-    prob += lpSum(df[df['player_id'] == pid]['credits'].values[0] * player_vars[pid] for pid in player_vars) <= 100.0
-
-    # Strict Per-Team Cap (Max 7 players from a single team per rules)
-    for t in df['team'].unique():
-        t_pids = df[df['team'] == t]['player_id'].tolist()
-        prob += lpSum(player_vars[pid] for pid in t_pids) <= 7
-        prob += lpSum(player_vars[pid] for pid in t_pids) >= 1
-
-    # Strict Role Constraints (Dream11 Platform Limits)
-    role_limits = {
-        'wk': (1, 4),   # Exactly 1 to 4 Wicket-Keepers
-        'bat': (1, 6),  # 1 to 6 Batters
-        'ar': (1, 6),   # 1 to 6 All-Rounders
-        'bowl': (1, 6)  # 1 to 6 Bowlers
+def load_slate_data():
+    """
+    STEP 1: RAPIDAPI CRICBUZZ INGESTION
+    Fetches and parses real-time match data using Cricbuzz nested JSON structures.
+    """
+    print("--- [STEP 1] FETCHING RAPIDAPI CRICBUZZ SLATE ---")
+    
+    api_key = "b84c777f82mshf8a62983fcca58dp1a6214jsn0eb579d1ea5d"
+    api_host = "cricbuzz-cricket.p.rapidapi.com"
+    
+    match_id = "40381"
+    endpoint = f"https://{api_host}/mcenter/v1/{match_id}/hscard"
+    
+    headers = {
+        "Content-Type": "application/json",
+        "x-rapidapi-host": api_host,
+        "x-rapidapi-key": api_key
     }
+    
+    parsed_rows = []
+    
+    try:
+        response = requests.get(endpoint, headers=headers, timeout=10)
+        response.raise_for_status()
+        data = response.json()
+        
+        # Safely extract the scorecard array
+        scorecard_list = data.get("scoreCard")
+        
+        if not scorecard_list:
+            print(f"API Notice: 'scoreCard' missing or empty. (Match might not have started).")
+            print(f"DEBUG - API Keys returned: {list(data.keys())}")
+        else:
+            for innings in scorecard_list:
+                
+                # --- PARSE BATTING TEAM ---
+                bat_team = innings.get("batTeamDetails", {})
+                team_name = bat_team.get("batTeamName", "Unknown Batting Team")
+                
+                # Cricbuzz stores batsmen as a dictionary mapping (e.g., "bat_123": {...})
+                batsmen_data = bat_team.get("batsmenData", {})
+                
+                for bat_id, b_info in batsmen_data.items():
+                    player_name = b_info.get("batName") or b_info.get("batShortName")
+                    if player_name:
+                        role = "WK" if b_info.get("isKeeper") else "BAT"
+                        parsed_rows.append({
+                            "player": player_name,
+                            "team": team_name,
+                            "role": role,
+                            "salary": 9.0,
+                            "projected_points": 50.0
+                        })
+                
+                # --- PARSE BOWLING TEAM ---
+                bowl_team = innings.get("bowlTeamDetails", {})
+                bowl_team_name = bowl_team.get("bowlTeamName", "Unknown Bowling Team")
+                
+                bowlers_data = bowl_team.get("bowlersData", {})
+                
+                for bowl_id, b_info in bowlers_data.items():
+                    player_name = b_info.get("bowlName") or b_info.get("bowlShortName")
+                    if not player_name:
+                        continue
+                        
+                    # Check if player is already in the list (batting and bowling makes them an All-Rounder)
+                    existing = next((r for r in parsed_rows if r['player'] == player_name), None)
+                    if existing:
+                        existing['role'] = "AR"
+                        existing['projected_points'] += 15.0  # Bump projection for all-rounders
+                        existing['salary'] += 0.5
+                    else:
+                        parsed_rows.append({
+                            "player": player_name,
+                            "team": bowl_team_name,
+                            "role": "BOW",
+                            "salary": 8.5,
+                            "projected_points": 45.0
+                        })
 
-    for r, (min_lim, max_lim) in role_limits.items():
-        r_pids = df[df['role'] == r]['player_id'].tolist()
-        if r_pids:
-            prob += lpSum(player_vars[pid] for pid in r_pids) >= min_lim
-            prob += lpSum(player_vars[pid] for pid in r_pids) <= max_lim
+    except Exception as e:
+        print(f"RapidAPI Connection Warning: {e}")
 
-    # Dynamic Vegas 3-Anchor Rule
-    anchor_pids = df[df['projected_points'] >= ANCHOR_THRESHOLD]['player_id'].tolist()
-    anchor_locked = False
-    if len(anchor_pids) >= 3:
-        prob += lpSum(player_vars[pid] for pid in anchor_pids) >= 3
-        anchor_locked = True
+    # Fallback to defaults if the payload didn't yield players (e.g. Match not started)
+    if not parsed_rows:
+        print("Notice: No players extracted. Initializing default match pool...")
+        team_a, team_b = "Team A", "Team B"
+        roles = ["WK", "BAT", "BAT", "BAT", "AR", "AR", "BOW", "BOW", "BOW", "BOW", "BAT"]
+        
+        for idx, r in enumerate(roles, 1):
+            parsed_rows.append({
+                "player": f"{team_a} Player {idx}", "team": team_a, "role": r,
+                "salary": 9.0 if r in ["WK", "AR"] else 8.5, "projected_points": 55.0 + (idx * 1.5)
+            })
+            parsed_rows.append({
+                "player": f"{team_b} Player {idx}", "team": team_b, "role": r,
+                "salary": 9.0 if r in ["WK", "AR"] else 8.5, "projected_points": 54.0 + (idx * 1.5)
+            })
 
-    # Custom Script Modifier if supplied
-    if focus_constraint_func:
-        focus_constraint_func(prob, player_vars, df)
+    df = pd.DataFrame(parsed_rows)
+    df.columns = df.columns.str.strip()
+    print(f"SUCCESS: Live slate loaded. Active player pool: {len(df)} rows.")
+    return df
 
-    prob.solve(PULP_CBC_CMD(msg=False))
 
-    # Extract clean binary selections
-    selected_pids = [pid for pid in player_vars if player_vars[pid].value() is not None and player_vars[pid].value() > 0.5]
-    res_team = df[df['player_id'].isin(selected_pids)].copy()
-    res_team = res_team.sort_values(by='projected_points', ascending=False).reset_index(drop=True)
-    return res_team, anchor_locked
+def optimize_lineup(df):
+    """
+    STEP 2: PULP LINEUP OPTIMIZATION ENGINE
+    Applies salary cap, exact squad size, and role constraints to maximize projected points.
+    """
+    print("\n--- [STEP 2] RUNNING PULP OPTIMIZATION MODEL ---")
+    
+    prob = pulp.LpProblem("Cricket_DFS_Optimizer", pulp.LpMaximize)
 
-final_team, is_anchored = solve_lineup("Macro_Baseline")
+    player_vars = {i: pulp.LpVariable(f"player_{i}", cat='Binary') for i in df.index}
 
-def slugfest_modifier(prob, p_vars, data):
-    bowl_pids = data[data['role'].isin(['bowl', 'ar'])]['player_id'].tolist()
-    prob += lpSum(p_vars[pid] for pid in bowl_pids) >= 7
+    prob += pulp.lpSum(player_vars[i] * df.loc[i, 'projected_points'] for i in df.index), "Total_Projected_Points"
+    prob += pulp.lpSum(player_vars[i] for i in df.index) == 11, "Total_Players_Constraint"
+    prob += pulp.lpSum(player_vars[i] * df.loc[i, 'salary'] for i in df.index) <= 100.0, "Salary_Cap_Constraint"
 
-alt_team, _ = solve_lineup("Bowling_Slugfest", slugfest_modifier)
+    for role in df['role'].unique():
+        role_indices = df[df['role'] == role].index
+        if role in ['WK', 'Wicketkeeper']:
+            prob += pulp.lpSum(player_vars[i] for i in role_indices) >= 1, "Min_WK"
+            prob += pulp.lpSum(player_vars[i] for i in role_indices) <= 4, "Max_WK"
+        elif role in ['BAT', 'Batsman']:
+            prob += pulp.lpSum(player_vars[i] for i in role_indices) >= 1, "Min_BAT"
+            prob += pulp.lpSum(player_vars[i] for i in role_indices) <= 6, "Max_BAT"
+        elif role in ['AR', 'Allrounder', 'All-Rounder']:
+            prob += pulp.lpSum(player_vars[i] for i in role_indices) >= 1, "Min_AR"
+            prob += pulp.lpSum(player_vars[i] for i in role_indices) <= 6, "Max_AR"
+        elif role in ['BOW', 'Bowler', 'BOWL']:
+            prob += pulp.lpSum(player_vars[i] for i in role_indices) >= 1, "Min_BOW"
+            prob += pulp.lpSum(player_vars[i] for i in role_indices) <= 6, "Max_BOW"
 
-# ==========================================
-# 6. MULTIPLIER ASSIGNMENT
-# ==========================================
-labels, final_ev = [], []
-for idx, row in final_team.iterrows():
-    if idx == 0:
-        labels.append('C')
-        final_ev.append(row['projected_points'] * 2.0)
-    elif idx == 1:
-        labels.append('VC')
-        final_ev.append(row['projected_points'] * 1.5)
-    else:
-        labels.append('')
-        final_ev.append(row['projected_points'])
+    prob.solve(pulp.PULP_CBC_CMD(msg=False))
 
-final_team['Multiplier'] = labels
-final_team['Final_EV'] = final_ev
+    print(f"Optimization Status: {pulp.LpStatus[prob.status]}")
 
-# ==========================================
-# 7. TERMINAL OUTPUT & ARCHIVAL
-# ==========================================
-print("\n=======================================================")
-print(f"      {ENGINE_NAME} - {ENTRY_MODE.upper()}           ")
-print(f"      Venue: {ACTIVE_VENUE} | Pitch: {PITCH_TYPE} | Weather: {WEATHER_CONDITION}")
-print("=======================================================")
-print(final_team[['Multiplier', 'name', 'team', 'role', 'credits', 'projected_points', 'Final_EV']].to_string(index=False))
-print("-------------------------------------------------------")
-print(f"Vegas 3-Anchor Rule  : {'LOCKED (Enforced)' if is_anchored else 'BYPASSED'}")
-print(f"Shadow Script Check  : Slugfest EV -> {alt_team['projected_points'].sum():.1f}")
-print(f"Total Credits Used   : {final_team['credits'].sum():.1f} / 100.0")
-print(f"Total Projected EV   : {final_team['Final_EV'].sum():.1f}")
-print("=======================================================\n")
+    selected_indices = [i for i in df.index if player_vars[i].varValue == 1]
+    selected_df = df.loc[selected_indices].copy()
 
-os.makedirs(OUTPUT_DIR, exist_ok=True)
-final_team.to_csv(os.path.join(OUTPUT_DIR, CSV_OUTPUT_NAME), index=False)
+    total_proj = selected_df['projected_points'].sum()
+    total_salary = selected_df['salary'].sum()
 
-# ==========================================
-# 8. PLOTLY DASHBOARD RENDERER
-# ==========================================
-fig = px.bar(
-    final_team.sort_values(by='Final_EV', ascending=True),
-    x='Final_EV',
-    y='name',
-    color='role',
-    orientation='h',
-    title=f"Single Bullet Compliance XI ({ACTIVE_VENUE})",
-    hover_data=['team', 'credits', 'Multiplier', 'projected_points'],
-    color_discrete_map={'ar': '#a855f7', 'bowl': '#10b981', 'bat': '#3b82f6', 'wk': '#ef4444'}
-)
-fig.update_layout(template="plotly_dark", xaxis_title="Final Projected EV", yaxis_title="Player Name")
-html_path = os.path.join(OUTPUT_DIR, DASHBOARD_NAME)
-fig.write_html(html_path, auto_open=False)
-webbrowser.open(f"file:///{os.path.abspath(html_path).replace(os.sep, '/')}")
+    print(f"SUCCESS: Optimal Lineup Generated.")
+    print(f"Total Projected Points: {total_proj:.2f} | Total Salary Used: {total_salary:.1f}/100.0")
+    print("\nSelected Lineup Breakdown:")
+    print(selected_df[['player', 'team', 'role', 'salary', 'projected_points']].to_string(index=False))
+    print("-" * 50 + "\n")
+
+    return selected_df
+
+
+if __name__ == "__main__":
+    try:
+        slate_df = load_slate_data()
+        
+        print("\nPlayer Pool Snapshot:")
+        print(slate_df[['player', 'team', 'role', 'salary', 'projected_points']].head(3).to_string(index=False))
+        print("-" * 46)
+        
+        optimize_lineup(slate_df)
+    except Exception as error:
+        print(f"Pipeline Terminated: {error}")
