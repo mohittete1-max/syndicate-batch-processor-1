@@ -16,13 +16,11 @@ def apply_market_engine():
         
     df['base_proj'] = df['projected_fantasy_points']
     
-    # Apply dynamic market/Vegas odds adjustment based on Cricsheet player pool
     np.random.seed(42)
     df['vegas_multiplier'] = np.random.uniform(0.85, 1.15, size=len(df))
     df['vegas_proj'] = df['base_proj'] * df['vegas_multiplier']
     df['shift'] = df['vegas_proj'] - df['base_proj']
     
-    # Extract top risers and fallers dynamically
     risers = df.sort_values(by='shift', ascending=False).head(5)
     fallers = df.sort_values(by='shift', ascending=True).head(5)
     
@@ -38,6 +36,11 @@ def apply_market_engine():
     output_file = "vegas_adjusted_slate.csv"
     df.to_csv(output_file, index=False)
     print(f"\nSuccess! Vegas-adjusted projections exported to {output_file}.")
+    return df
+
+def apply_market_and_environmental_adjustments():
+    """Alias wrapper for backward compatibility with optimizer imports."""
+    return apply_market_engine()
 
 if __name__ == "__main__":
     apply_market_engine()

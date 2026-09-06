@@ -1,52 +1,52 @@
 import os
 import pandas as pd
 
-def parse_cricsheet_csv_directory(data_dir, output_csv="master_cricket_dataset.csv"):
-    """
-    Parses Cricsheet CSV data from the provided directory, 
-    saves it to a master dataset CSV file for downstream pipelines.
-    """
-    all_matches_path = os.path.join(data_dir, "all_matches.csv")
+# Use a relative path so it works both locally and inside the Docker container
+DATA_DIR = "CRICSHEET DATA"
+OUTPUT_FILE = "master_cricket_dataset.csv"
+
+def parse_cricsheet_csv_directory(data_dir):
+    if not os.path.exists(data_dir):
+        raise FileNotFoundError(f"Directory not found: '{data_dir}'. Ensure the 'CRICSHEET DATA' folder exists in your project root and is copied into the Docker image.")
+
+    # 1. Check for the consolidated all_matches.csv first to speed up the process
+    consolidated_path = os.path.join(data_dir, "all_matches.csv")
     
-    if os.path.exists(all_matches_path):
-        print(f"Found consolidated file: {all_matches_path}. Loading directly...")
-        df = pd.read_csv(all_matches_path, low_memory=False)
+    if os.path.exists(consolidated_path):
+        print(f"Found consolidated file: {consolidated_path}. Loading directly...")
+        df = pd.read_csv(consolidated_path, low_memory=False)
         print(f"Loaded {len(df)} rows from all_matches.csv.")
         
-        # Save out to the expected master dataset filename
-        df.to_csv(output_csv, index=False)
-        print(f"Saved master dataset to {output_csv}")
-        return df
-        
+        df.to_csv(OUTPUT_FILE, index=False)
+        print(f"Saved master dataset to {OUTPUT_FILE}")
+        return
+
+    # 2. If no consolidated file is found, process the individual match CSVs
+    print(f"Scanning directory '{data_dir}' for match files...")
     match_files = [f for f in os.listdir(data_dir) if f.endswith('.csv') and not f.endswith('_info.csv')]
-    print(f"Found {len(match_files)} individual match CSV files to process.")
     
-    frames = []
-    for file_name in match_files:
-        file_path = os.path.join(data_dir, file_name)
-        info_path = os.path.join(data_dir, file_name.replace('.csv', '_info.csv'))
-        
+    if not match_files:
+        raise ValueError(f"No match CSV files found in '{data_dir}'.")
+
+    print(f"Found {len(match_files)} match files. Consolidating...")
+    
+    df_list = []
+    for file in match_files:
+        file_path = os.path.join(data_dir, file)
         try:
-            df_ball = pd.read_csv(file_path, low_memory=False)
-            if os.path.exists(info_path):
-                df_info = pd.read_csv(info_path, low_memory=False)
-                for col in df_info.columns:
-                    if col not in df_ball.columns:
-                        df_ball[col] = df_info[col].iloc[0] if not df_info.empty else 'unknown'
-                        
-            frames.append(df_ball)
+            temp_df = pd.read_csv(file_path, low_memory=False)
+            df_list.append(temp_df)
         except Exception as e:
-            print(f"Error processing {file_name}: {e}")
+            print(f"Error reading {file}: {e}")
             
-    if frames:
-        master_df = pd.concat(frames, ignore_index=True)
-        master_df.to_csv(output_csv, index=False)
-        print(f"Consolidated dataset saved to {output_csv} with {len(master_df)} rows.")
-        return master_df
-    else:
-        print("No valid CSV match files found.")
-        return None
+    if not df_list:
+        raise RuntimeError("Failed to load any data.")
+        
+    master_df = pd.concat(df_list, ignore_index=True)
+    print(f"Loaded {len(master_df)} rows from individual files.")
+    
+    master_df.to_csv(OUTPUT_FILE, index=False)
+    print(f"Saved master dataset to {OUTPUT_FILE}")
 
 if __name__ == "__main__":
-    DATA_DIR = "C:/Users/User/OneDrive/Desktop/Cricket/CRICSHEET DATA"
     parse_cricsheet_csv_directory(DATA_DIR)
