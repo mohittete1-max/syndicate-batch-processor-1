@@ -1,0 +1,9 @@
+Lineup_ID,Player,Team,Role,Salary
+1,Player Alpha,TEAM_A,BAT,9.0
+1,Player Beta,TEAM_B,BOWL,8.5
+1,Player Gamma,TEAM_A,AR,9.5
+1,Player Delta,TEAM_B,WK,8.0
+2,Player Alpha,TEAM_A,BAT,9.0
+2,Player Epsilon,TEAM_B,AR,8.8
+2,Player Zeta,TEAM_A,BOWL,8.2
+2,Player Theta,TEAM_B,BAT,9.1

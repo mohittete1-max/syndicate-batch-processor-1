@@ -2,3 +2,4 @@ data/
 master_deliveries.csv
 player_match_scores.csv
 __pycache__/
+gcs_credentials.json 
